@@ -1,0 +1,13 @@
+Dell Alienware 17-2017
+Price: $1795
+- Intel i7-6700HQ 2.6GHz Max 3.5GHz
+- RAM: 16GB DDR4
+- HDD : 1TB +128GB SSD
+- 17.3" FHD (1920 x 1080), 4K Output
+- Optical Drive: NO
+- VGA 1: Intel HD Graphics 530
+- VGA 2: NVIDIA GTX 1060 (6GB)
+- Alien HD+IR presence Detection Camera
+- 8-cell Lithium Ion (92 wHr)
+- Windows 10 License
+- Weight : 3.7 Kg

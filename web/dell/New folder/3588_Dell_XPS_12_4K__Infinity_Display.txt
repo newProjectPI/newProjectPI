@@ -1,0 +1,12 @@
+Dell XPS 12 4K
+Price: $1645
+- Intel Core M5-6Y54 (1.1GHz)
+- Ram: 8GB LPDDR3
+- HDD : 512 GB SSD-M2
+- 12.5" 4K Ultra HD (3840 x 2160) Touch
+- Intel HD Graphics 515
+- USB 3.1 Gen 2 (10Gbps)
+- Dual Camera 8MP/5MP
+- 30WHr Integrated Battery
+- Windows 10 Pro License
+- Weight: 1.1 Kg

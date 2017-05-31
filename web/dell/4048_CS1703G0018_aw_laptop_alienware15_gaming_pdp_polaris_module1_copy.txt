@@ -1,0 +1,12 @@
+Dell Alienware 15
+Price: $1849
+- Intel i7-6700HQ 2.6GHz
+- RAM : 16GB DDR4
+- HDD : 1TB (7200 RPM)
+- 15.6" FHD (1920 x 1080)
+- Optical Drive: NO
+- VGA 1: Intel HD Graphics 530
+- VGA 2: NVIDIA GTX 1070 8GB
+- Windows 10 License
+- 8-cell Lithium Ion (92 wHr)
+- Weight : 3.4 Kg

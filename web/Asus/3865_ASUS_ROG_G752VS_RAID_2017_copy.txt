@@ -1,0 +1,13 @@
+ASUS ROG G752VS (2017)
+Price: $2345
+- Intel i7-6820HK (2.70GHz)
+- RAM: 16GB DDR4 (Speed 2133 MHz)
+- HDD : 1TB + 512GB PCIe
+- 17.3" FHD (1920*1080)
+- Optical Drive: DVD-RW
+- VGA 1 : Intel HD Graphics 530
+- VGA 2 : NVIDIA GTX 1070 (8GB)
+- Gigabit Ethernet, Bluetooth 4.1
+- Battery: 8 Cell 88 Wh 6000 mAh
+- Weight : 3.5 Kg
+- Windows 10 License
