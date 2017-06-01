@@ -134,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
 			<div class="w3l_logo">
-				<h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
+				<h1><a href="index.php">Electronic Store<span>Your stores. Your place.</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
@@ -171,7 +171,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>	
+						<li><a href="index.php">Home</a></li>
 						<!-- Mega Menu -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
@@ -180,28 +180,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Mobiles</h6>
-											<li><a href="products.html">Mobile Phones</a></li>
-											<li><a href="products.html">Mp3 Players <span>New</span></a></li> 
-											<li><a href="products.html">Popular Models</a></li>
-											<li><a href="products.html">All Tablets<span>New</span></a></li>
+											<li><a href="products.php">Mobile Phones</a></li>
+											<li><a href="products.php">Mp3 Players <span>New</span></a></li>
+											<li><a href="products.php">Popular Models</a></li>
+											<li><a href="products.php">All Tablets<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Accessories</h6>
-											<li><a href="products1.html">Laptop</a></li>
-											<li><a href="products1.html">Desktop</a></li>
-											<li><a href="products1.html">Wearables <span>New</span></a></li>
-											<li><a href="products1.html"><i>Summer Store</i></a></li>
+											<li><a href="products1.php">Laptop</a></li>
+											<li><a href="products1.php">Desktop</a></li>
+											<li><a href="products1.php">Wearables <span>New</span></a></li>
+											<li><a href="products1.php"><i>Summer Store</i></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-2">
 										<ul class="multi-column-dropdown">
 											<h6>Home</h6>
-											<li><a href="products2.html">Tv</a></li>
-											<li><a href="products2.html">Camera</a></li>
-											<li><a href="products2.html">AC</a></li>
-											<li><a href="products2.html">Grinders</a></li>
+											<li><a href="products2.php">Tv</a></li>
+											<li><a href="products2.php">Camera</a></li>
+											<li><a href="products2.php">AC</a></li>
+											<li><a href="products2.php">Grinders</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
@@ -214,14 +214,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html">About Us</a></li> 
+						<li><a href="about.php">About Us</a></li>
 						<li class="w3pages"><a href="#" class="dropdown-toggle act" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="icons.html" class="act">Web Icons</a></li>
-								<li><a href="codes.html">Short Codes</a></li>     
+								<li><a href="icons.php" class="act">Web Icons</a></li>
+								<li><a href="codes.php">Short Codes</a></li>
 							</ul>
 						</li>  
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="mail.php">Mail Us</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -239,7 +239,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
 				<li>Web Icons</li>
 			</ul>
 		</div>

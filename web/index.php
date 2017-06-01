@@ -1,9 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +53,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
 			<div class="w3l_logo">
-				<h1 align="center"><a href="index.html">Panda Shop<span>Your stores. Your place.</span></a></h1>
+				<h1 align="center"><a href="index.php">Panda Shop<span>Your stores. Your place.</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
@@ -95,7 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html" class="act">Home</a></li>	
+						<li><a href="index.php" class="act">Home</a></li>
 						<!-- Mega Menu -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
@@ -104,28 +99,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Mobiles</h6>
-											<li><a href="products.html">Mobile Phones</a></li>
-											<li><a href="products.html">Mp3 Players <span>New</span></a></li> 
-											<li><a href="products.html">Popular Models</a></li>
-											<li><a href="products.html">All Tablets<span>New</span></a></li>
+											<li><a href="products.php">Mobile Phones</a></li>
+											<li><a href="products.php">Mp3 Players <span>New</span></a></li>
+											<li><a href="products.php">Popular Models</a></li>
+											<li><a href="products.php">All Tablets<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Accessories</h6>
-											<li><a href="products1.html">Laptop</a></li>
-											<li><a href="products1.html">Desktop</a></li>
-											<li><a href="products1.html">Wearables <span>New</span></a></li>
-											<li><a href="products1.html"><i>Summer Store</i></a></li>
+											<li><a href="products1.php">Laptop</a></li>
+											<li><a href="products1.php">Desktop</a></li>
+											<li><a href="products1.php">Wearables <span>New</span></a></li>
+											<li><a href="products1.php"><i>Summer Store</i></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-2">
 										<ul class="multi-column-dropdown">
 											<h6>Home</h6>
-											<li><a href="products2.html">Tv</a></li>
-											<li><a href="products2.html">Camera</a></li>
-											<li><a href="products2.html">AC</a></li>
-											<li><a href="products2.html">Grinders</a></li>
+											<li><a href="products2.php">Tv</a></li>
+											<li><a href="products2.php">Camera</a></li>
+											<li><a href="products2.php">AC</a></li>
+											<li><a href="products2.php">Grinders</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
@@ -138,14 +133,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html">About Us</a></li> 
+						<li><a href="about.php">About Us</a></li>
 						<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="icons.html">Web Icons</a></li>
-								<li><a href="codes.html">Short Codes</a></li>     
+								<li><a href="icons.php">Web Icons</a></li>
+								<li><a href="codes.php">Short Codes</a></li>
 							</ul>
 						</li>  
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="mail.php">Mail Us</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -188,7 +183,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div> 
-									<h5><a href="single.html">Mobile Phone1</a></h5>
+									<h5><a href="single.php">Mobile Phone1</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$380</span> <i class="item_price">$350</i></p>
 										<form action="#" method="post">
@@ -220,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div> 
-									<h5><a href="single.html">Mobile Phone1</a></h5>
+									<h5><a href="single.php">Mobile Phone1</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$380</span> <i class="item_price">$350</i></p>
 										<form action="#" method="post">
@@ -252,7 +247,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Mobile Phone2</a></h5>
+									<h5><a href="single.php">Mobile Phone2</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$330</span> <i class="item_price">$302</i></p>
 										<form action="#" method="post">
@@ -282,7 +277,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Mobile Phone3</a></h5>
+									<h5><a href="single.php">Mobile Phone3</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$250</span> <i class="item_price">$245</i></p>
 										<form action="#" method="post">
@@ -317,7 +312,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Speakers</a></h5>
+									<h5><a href="single.php">Speakers</a></h5>
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 									<div class="simpleCart_shelfItem">
 										<form action="#" method="post">
@@ -347,7 +342,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Headphones</a></h5>
+									<h5><a href="single.php">Headphones</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$180</span> <i class="item_price">$150</i></p>
 										<form action="#" method="post">
@@ -377,7 +372,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Audio Player</a></h5>
+									<h5><a href="single.php">Audio Player</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$220</span> <i class="item_price">$180</i></p>
 										<form action="#" method="post">
@@ -412,7 +407,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Laptop</a></h5>
+									<h5><a href="single.php">Laptop</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$880</span> <i class="item_price">$850</i></p>
 										<form action="#" method="post">
@@ -442,7 +437,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Notebook</a></h5>
+									<h5><a href="single.php">Notebook</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$290</span> <i class="item_price">$280</i></p>
 										<form action="#" method="post">
@@ -472,7 +467,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Kid's Toy</a></h5>
+									<h5><a href="single.php">Kid's Toy</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$120</span> <i class="item_price">$80</i></p>
 										<form action="#" method="post">
@@ -507,7 +502,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Refrigerator</a></h5>
+									<h5><a href="single.php">Refrigerator</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$950</span> <i class="item_price">$820</i></p>
 										<form action="#" method="post">
@@ -537,7 +532,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">LED Tv</a></h5>
+									<h5><a href="single.php">LED Tv</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$700</span> <i class="item_price">$680</i></p>
 										<form action="#" method="post">
@@ -567,7 +562,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Washing Machine</a></h5>
+									<h5><a href="single.php">Washing Machine</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$520</span> <i class="item_price">$510</i></p>
 										<form action="#" method="post">
@@ -602,7 +597,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Grinder</a></h5>
+									<h5><a href="single.php">Grinder</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$460</span> <i class="item_price">$450</i></p>
 										<form action="#" method="post">
@@ -632,7 +627,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Water Purifier</a></h5>
+									<h5><a href="single.php">Water Purifier</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$390</span> <i class="item_price">$350</i></p>
 										<form action="#" method="post">
@@ -662,7 +657,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Coffee Maker</a></h5>
+									<h5><a href="single.php">Coffee Maker</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$250</span> <i class="item_price">$220</i></p>
 										<form action="#" method="post">
@@ -1116,7 +1111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="agileinfo_banner_bottom1_grids">
 			<div class="col-md-7 agileinfo_banner_bottom1_grid_left">
 				<h3>Grand Opening Event With flat<span>20% <i>Discount</i></span></h3>
-				<a href="products.html">Shop Now</a>
+				<a href="products.php">Shop Now</a>
 			</div>
 			<div class="col-md-5 agileinfo_banner_bottom1_grid_right">
 				<h4>hot deal</h4>
@@ -1220,7 +1215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Laptops</a></h5>
+						<h5><a href="single.php">Laptops</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$520</span> <i class="item_price">$500</i></p>
 							<form action="#" method="post">
@@ -1249,7 +1244,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Black Phone</a></h5>
+						<h5><a href="single.php">Black Phone</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$380</span> <i class="item_price">$370</i></p>
 							<form action="#" method="post">
@@ -1278,7 +1273,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Kids Toy</a></h5>
+						<h5><a href="single.php">Kids Toy</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$150</span> <i class="item_price">$100</i></p>
 							<form action="#" method="post">
@@ -1307,7 +1302,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Induction Stove</a></h5>
+						<h5><a href="single.php">Induction Stove</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$280</span> <i class="item_price">$250</i></p>
 							<form action="#" method="post">
@@ -1412,28 +1407,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Information</h3>
 					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="mail.php">Contact Us</a></li>
+						<li><a href="codes.php">Short Codes</a></li>
+						<li><a href="faq.php">FAQ's</a></li>
+						<li><a href="products.php">Special Products</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul class="info"> 
-						<li><a href="products.html">Mobiles</a></li>
-						<li><a href="products1.html">Laptops</a></li>
-						<li><a href="products.html">Purifiers</a></li>
-						<li><a href="products1.html">Wearables</a></li>
-						<li><a href="products2.html">Kitchen</a></li>
+						<li><a href="products.php">Mobiles</a></li>
+						<li><a href="products1.php">Laptops</a></li>
+						<li><a href="products.php">Purifiers</a></li>
+						<li><a href="products1.php">Wearables</a></li>
+						<li><a href="products2.php">Kitchen</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info"> 
-						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html">Today's Deals</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="products.php">Today's Deals</a></li>
 					</ul>
 					<h4>Follow Us</h4>
 					<div class="agileits_social_button">

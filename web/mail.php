@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Electronic Store a Ecommerce Online Shopping Category Bootstrap Responsive Website Template | About :: w3layouts</title>
+<title>Electronic Store a Ecommerce Online Shopping Category Bootstrap Responsive Website Template | Mail Us :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -134,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
 			<div class="w3l_logo">
-				<h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
+				<h1><a href="index.php">Electronic Store<span>Your stores. Your place.</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
@@ -171,7 +171,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>	
+						<li><a href="index.php">Home</a></li>
 						<!-- Mega Menu -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
@@ -180,28 +180,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Mobiles</h6>
-											<li><a href="products.html">Mobile Phones</a></li>
-											<li><a href="products.html">Mp3 Players <span>New</span></a></li> 
-											<li><a href="products.html">Popular Models</a></li>
-											<li><a href="products.html">All Tablets<span>New</span></a></li>
+											<li><a href="products.php">Mobile Phones</a></li>
+											<li><a href="products.php">Mp3 Players <span>New</span></a></li>
+											<li><a href="products.php">Popular Models</a></li>
+											<li><a href="products.php">All Tablets<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Accessories</h6>
-											<li><a href="products1.html">Laptop</a></li>
-											<li><a href="products1.html">Desktop</a></li>
-											<li><a href="products1.html">Wearables <span>New</span></a></li>
-											<li><a href="products1.html"><i>Summer Store</i></a></li>
+											<li><a href="products1.php">Laptop</a></li>
+											<li><a href="products1.php">Desktop</a></li>
+											<li><a href="products1.php">Wearables <span>New</span></a></li>
+											<li><a href="products1.php"><i>Summer Store</i></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-2">
 										<ul class="multi-column-dropdown">
 											<h6>Home</h6>
-											<li><a href="products2.html">Tv</a></li>
-											<li><a href="products2.html">Camera</a></li>
-											<li><a href="products2.html">AC</a></li>
-											<li><a href="products2.html">Grinders</a></li>
+											<li><a href="products2.php">Tv</a></li>
+											<li><a href="products2.php">Camera</a></li>
+											<li><a href="products2.php">AC</a></li>
+											<li><a href="products2.php">Grinders</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
@@ -214,14 +214,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html" class="act">About Us</a></li> 
+						<li><a href="about.php">About Us</a></li>
 						<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="icons.html">Web Icons</a></li>
-								<li><a href="codes.html">Short Codes</a></li>     
+								<li><a href="icons.php">Web Icons</a></li>
+								<li><a href="codes.php">Short Codes</a></li>
 							</ul>
 						</li>  
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="mail.php" class="act">Mail Us</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -231,129 +231,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- banner -->
 	<div class="banner banner10">
 		<div class="container">
-			<h2>About Us</h2>
+			<h2>Mail Us</h2>
 		</div>
 	</div>
-	<!-- //banner -->   
+	<!-- //banner -->    
 	<!-- breadcrumbs -->
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>About Us</li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
+				<li>Mail Us</li>
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 
-	<!-- about -->
-	<div class="about">
-		<div class="container">	
-			<div class="w3ls_about_grids">
-				<div class="col-md-6 w3ls_about_grid_left">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-						anim id est laborum.</p>
-					<div class="col-xs-2 w3ls_about_grid_left1">
-						<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 w3ls_about_grid_left2">
-						<p>Sunt in culpa qui officia deserunt mollit 
-							anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse 
-						cillum dolore eu fugiat nulla pariatur.</p>
-					</div>
-					<div class="clearfix"> </div>
-					<div class="col-xs-2 w3ls_about_grid_left1">
-						<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
-					</div>
-					<div class="col-xs-10 w3ls_about_grid_left2">
-						<p>Sunt in culpa qui officia deserunt mollit 
-							anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse 
-						cillum dolore eu fugiat nulla pariatur.</p>
-					</div>
-					<div class="clearfix"> </div>
+	<!-- mail -->
+	<div class="mail">
+		<div class="container">
+			<h3>Mail Us</h3>
+			<div class="agile_mail_grids">
+				<div class="col-md-5 contact-left">
+					<h4>Address</h4>
+					<p>est eligendi optio cumque nihil impedit quo minus id quod maxime
+						<span>26 56D Rescue,US</span></p>
+					<ul>
+						<li>Free Phone :+1 078 4589 2456</li>
+						<li>Telephone :+1 078 4589 2456</li>
+						<li>Fax :+1 078 4589 2456</li>
+						<li><a href="mailto:info@example.com">info@example.com</a></li>
+					</ul>
 				</div>
-				<div class="col-md-6 w3ls_about_grid_right">
-					<img src="images/52.jpg" alt=" " class="img-responsive" />
+				<div class="col-md-7 contact-left">
+					<h4>Contact Form</h4>
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Your Name" required="">
+						<input type="email" name="Email" placeholder="Your Email" required="">
+						<input type="text" name="Telephone" placeholder="Telephone No" required="">
+						<textarea name="message" placeholder="Message..." required=""></textarea>
+						<input type="submit" value="Submit" >
+					</form>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
-	</div>
-	<!-- //about --> 
-	<!-- team -->
-	<div class="team">
-		<div class="container">
-			<h3>Meet Our Team</h3>
-			<div class="wthree_team_grids">
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/t4.png" alt=" " class="img-responsive" />
-					<h4>Smith Allen <span>Manager</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/t5.png" alt=" " class="img-responsive" />
-					<h4>Laura James <span>Designer</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/t6.png" alt=" " class="img-responsive" />
-					<h4>Crisp Doe <span>Director</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/t7.png" alt=" " class="img-responsive" />
-					<h4>Linda Rosy <span>Quality Checker</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-					voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-					repellat.</p>
+
+			<div class="contact-bottom">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96908.54934770924!2d-73.74913540000001!3d40.62123259999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sanimal+rescue+service+near+Inwood%2C+New+York%2C+NY%2C+United+States!5e0!3m2!1sen!2sin!4v1436335928062" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
-	<!-- //team -->
-	<!-- team-bottom -->
-	<div class="team-bottom">
-		<div class="container">
-			<h3>Are You Ready For Deals? Flat <span>30% Offer </span>on Mobiles</h3>
-			<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-				voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-				repellat.</p>
-			<a href="products.html">Shop Now</a>
-		</div>
-	</div>
-	<!-- //team-bottom -->
-	<!-- newsletter -->
+	<!-- //mail -->
+<!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
 			<div class="col-md-6 w3agile_newsletter_left">
@@ -386,28 +313,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Information</h3>
 					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="mail.php">Contact Us</a></li>
+						<li><a href="codes.php">Short Codes</a></li>
+						<li><a href="faq.php">FAQ's</a></li>
+						<li><a href="products.php">Special Products</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul class="info"> 
-						<li><a href="products.html">Mobiles</a></li>
-						<li><a href="products1.html">Laptops</a></li>
-						<li><a href="products.html">Purifiers</a></li>
-						<li><a href="products1.html">Wearables</a></li>
-						<li><a href="products2.html">Kitchen</a></li>
+						<li><a href="products.php">Mobiles</a></li>
+						<li><a href="products1.php">Laptops</a></li>
+						<li><a href="products.php">Purifiers</a></li>
+						<li><a href="products1.php">Wearables</a></li>
+						<li><a href="products2.php">Kitchen</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info"> 
-						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html">Today's Deals</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="products.php">Today's Deals</a></li>
 					</ul>
 					<h4>Follow Us</h4>
 					<div class="agileits_social_button">
