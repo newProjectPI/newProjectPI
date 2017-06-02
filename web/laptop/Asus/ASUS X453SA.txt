@@ -1,0 +1,13 @@
+ASUS X453SA
+Price: $265
+- Intel N3050 1.6GHz
+- CPU : 2016
+- RAM: 2GB DDR3
+- HDD : 1TB
+- 14" HD (1366 x 768)
+- VGA : Intel HD Graphics
+- Optical Drive: DVD RW
+- Webcam/ Wireless lan/ USB 3.0
+- Bluetooth/ Card reader
+- Windows 10 Pro Recommendation
+- Weight : 1.8 Kg

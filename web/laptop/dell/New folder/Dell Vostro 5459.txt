@@ -1,0 +1,13 @@
+Dell Vostro 5459
+Price: $495
+- Intel Core i3-6100U (2.30GHz)
+- RAM: 4GB DDR3L 
+- HDD : 500GB
+- 14" HD WLED (1366 x 768),
+- Optical Drive: No
+- VGA : Intel HD Graphics 520
+- WebCam HD/ HDMI/ USB3.0/ LAN/ Wifi/ BT
+- 43 WHr, 3-Cell Battery
+- Connectivity: WiDi Support Technology
+- Windows 10 Pro Recommendation
+- Weight : 1.7 Kg

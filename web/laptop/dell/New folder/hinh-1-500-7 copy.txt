@@ -1,0 +1,14 @@
+DELL Inspiron 5459 (2016)
+Price: $710
+- Intel Core i7-6500U 2.50GHz
+- New Model of Dell Product for 2016
+- RAM: 4GB DDR3
+- HDD: 500GB
+- 14" HD WLED (1366 x 768)
+- Optical Drive: No
+- VGA 1 : Intel HD Graphics 520
+- VGA 2 : NViDia Geforce 930M 4GB
+- WebCam HD/ HDMI/ USB3.0/ LAN/ Wifi
+- 43 WHr, 3-Cell Battery
+- Windows 10 Pro Recommendation
+- Weight : 1.7 Kg

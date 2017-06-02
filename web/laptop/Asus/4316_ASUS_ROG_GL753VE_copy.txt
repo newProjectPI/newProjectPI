@@ -1,0 +1,12 @@
+ASUS ROG GL753VE
+Price: $1295
+- Intel i7-7700HQ (2.80GHz) Max 3.80GHz
+- RAM : 8GB DDR4
+- HDD : 1TB
+- 17.3" FHD (1920 x 1080)
+- Optical Drive: DVD-RW
+- VGA 1 : Intel HD Graphics 630
+- VGA 2 : NVIDIA GTX 1050Ti (4GB)
+- Battery: 4 Cells 48 Whrs Battery
+- Windows 10 Pro Recommedation
+- Weight : 2.7 Kg

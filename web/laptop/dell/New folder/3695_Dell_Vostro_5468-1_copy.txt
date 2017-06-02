@@ -1,0 +1,12 @@
+DELL Vostro 5468
+Price: $770
+- Intel i7–7500U (2.70GHz)
+- RAM: 8GB DDR4
+- HDD : 1TB
+- 14" HD WLED (1366 x 768), Anti-Glare
+- Optical Drive: No
+- VGA 1 : Intel HD Graphics 620
+- VGA 2 : NVIDIA M940MX GDDR5 (4GB)
+- 42 WHr, 65 Watt 3 Cells Battery
+- Windows 10 Pro Recommendation
+- Weight : 1.5 Kg
