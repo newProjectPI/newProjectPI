@@ -155,7 +155,7 @@
 	<div class="navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
+				
 				<div class="navbar-header nav_2">
 					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 						<span class="sr-only">Toggle navigation</span>
@@ -187,10 +187,18 @@
 											<li><a href="products1.php">Samsung</a></li>
 											<li><a href="products1.php">Hp</a></li>
 											<li><a href="products1.php">Apple <span>New</span></a></li>
-											<!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
 										</ul>
 									</div>
-									<!-- <div class="col-sm-4">
+									<!-- <div class="col-sm-2">
+										<ul class="multi-column-dropdown">
+											<h6>Home</h6>
+											<li><a href="products2.html">Tv</a></li>
+											<li><a href="products2.html">Camera</a></li>
+											<li><a href="products2.html">AC</a></li>
+											<li><a href="products2.html">Grinders</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
 										<div class="w3ls_products_pos">
 											<h4>30%<i>Off/-</i></h4>
 											<img src="images/1.jpg" alt=" " class="img-responsive" />
@@ -200,227 +208,56 @@
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html" class="act">About Us</a></li> 
+						<li><a href="about.php">About Us</a></li>
 						<!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="icons.html">Web Icons</a></li>
 								<li><a href="codes.html">Short Codes</a></li>     
 							</ul>
 						</li>   -->
-						<li><a href="mail.php">Contact Us</a></li>
+						<li><a href="mail.php" class="act">Contact Us</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 	</div>
-	<!-- //navigation -->
-	<!-- banner -->
+	<!-- //navigation
+	banner -->
 	<div class="banner banner10">
 		<div class="container">
-			<h2>About Us</h2>
+			<h2>Contact Us</h2>
 		</div>
 	</div>
-	<!-- //banner -->   
+	<!-- //banner -->    
 	<!-- breadcrumbs -->
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
 				<li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>About Us</li>
+				<li>Contact Us</li>
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 
-	<!-- about -->
-	<div class="about">
-		<div class="container">	
-			<div class="w3ls_about_grids">
-				<div class="col-md-6 w3ls_about_grid_left">
-				<h2 style="color: red;">About Us</h2>
-					<p>
-					Through efforts in sale and good service, Panda COMPUTER has developed at a rapid pace; we now have our 100 sub-dealing shops in cities and provinces across the Kingdom of Cambodia.
-					</p>
-					<!-- <div class="col-xs-2 w3ls_about_grid_left1">
-						<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
-					</div> -->
-					<div class="col-xs-10 w3ls_about_grid_left2">
-						<strong><u style="color: blue;">With Supliers</u></strong>
-						<p>from counties like Singapore, Malaysia and Thailand, coupled with the good service that we provide and the variety of brand names and models that we offer, we have gained 70%-80% of the market share.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-					<!-- <div class="col-xs-2 w3ls_about_grid_left1">
-						<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
-					</div> -->
-					<div class="col-xs-10 w3ls_about_grid_left2">
-						<strong><u style="color: blue;">Panda Computer</u></strong>
-						<p>
-							Which was registered under the law of the Kingdom of Cambodia, is a company importing, distributing and selling all kind of computer. Our company was established in 2002 and started selling secondhand computer. Seeing the future and potentially booming market, and with the focus on maintaining good quality and reputation, after two years of operation, our company shifted from sale of secondhand computer to importation and sale of new computer of popular brand names.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 w3ls_about_grid_right">
-					<img src="images/shop.jpg" alt=" " class="img-responsive" style="height: 500px" />
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //about --> 
-	<!-- team -->
-	<div class="team">
+	<!-- mail -->
+	<div class="mail">
 		<div class="container">
-			<h3>Meet Our Team</h3>
-			<div class="wthree_team_grids">
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/tou.png" alt=" " class="img-responsive" />
-					<h4>TUN VITOU<span>Director</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/bon.png" alt=" " class="img-responsive" />
-					<h4>THACH THI BONG<span>Manager</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/neth.png" alt=" " class="img-responsive" />
-					<h4>THOR SREYNETH <span>Consultant</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 wthree_team_grid">
-					<img src="images/ang.png" alt=" " class="img-responsive" />
-					<h4>SENG LOUM ANG<span>Consultant</span></h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-				<p>Thank you that you take a chance to visit our page.</p>
-			</div>
+			<p style="color:#777777;line-height:1.3em;font-size:14px;padding-left:20px">
+			 <strong style="color: red"> Contact Us </strong>  <br>_________________________________________________________________ <br><br>
+			 	- Address: No.1234, TK Avenue, Toul Kork, Phnom Penh <br>
+				- Tel: +885 123 123<br>
+				- Skype: PandaPCshop <br>
+				- Telegram : PandaPCshop or 015 64 65 81  <br>
+				- Email: PandaPCshop@gmail.com <br>
+				- Website: <a href="http://PandaPCshop.com" target="_blank"> http://www.PandaPCshop.com </a><br>
+				- Website:<a href="https://www.facebook.com/PandaPCshop" target="_blank"> http://www.facebook.com/PandaPCshop </a></p></br>
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31270.029650425986!2d104.88003706151555!3d11.569505918141743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951725d8c4835%3A0x2047e2df9364f385!2sKhan+Tuol+Kouk%2C+Phnom+Penh!5e0!3m2!1sen!2skh!4v1487873187870" width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="clear"></div>
+			
+        </div>
+
 		</div>
-	</div>
-	<!-- //team -->
-	<!-- team-bottom -->
-	<!-- <div class="team-bottom">
-		<div class="container">
-			<h3>Are You Ready For Deals? Flat <span>30% Offer </span>on Mobiles</h3>
-			<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-				voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-				repellat.</p>
-			<a href="products.html">Shop Now</a>
-		</div>
-	</div>
-	<!-- //team-bottom -->
-	<!-- newsletter -->
-	<!-- <div class="newsletter">
-		<div class="container">
-			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>Newsletter</h3>
-				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
-			</div>
-			<div class="col-md-6 w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" placeholder="Email" required="">
-					<input type="submit" value="" />
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div> -->
-	<!-- //newsletter -->
-	<!-- footer -->
-	<!-- <div class="footer">
-		<div class="container">
-			<div class="w3_footer_grids">
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
-					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
-					<ul class="info"> 
-						<li><a href="products.html">Mobiles</a></li>
-						<li><a href="products1.html">Laptops</a></li>
-						<li><a href="products.html">Purifiers</a></li>
-						<li><a href="products1.html">Wearables</a></li>
-						<li><a href="products2.html">Kitchen</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Profile</h3>
-					<ul class="info"> 
-						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html">Today's Deals</a></li>
-					</ul>
-					<h4>Follow Us</h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="footer-copy">
-			<div class="footer-copy1">
-				<div class="footer-copy-pos">
-					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
-				</div>
-			</div>
-			<div class="container">
-				<p>&copy; 2017 Electronic Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
-		</div>
-	</div> --> 
-	<!-- //footer -->  
-	<!-- cart-js -->
-	<!-- newsletter -->
+		<!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
 			<div class="col-md-6 w3agile_newsletter_left">
@@ -516,5 +353,7 @@
         });
     </script>  
 	<!-- //cart-js --> 
+
+	</div>
 </body>
 </html>
