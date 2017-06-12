@@ -159,15 +159,15 @@
 	$sql = "SELECT * FROM computer";
 	$result = mysqli_query($db,$sql);
 	echo "<div class=' col-md-12' style='margin-top: 10px'>";
-	echo "<div style='background: white;' class='modal-content col-md-offset-1 col-md-10' >";
-        while ($row = mysqli_fetch_array($result)) {
-            echo "<div id='img_div'>";
-            echo "<img src='images/".$row['photo']."'>";
-            echo "<p>".$row['title']."</p>";
-            echo "<p>".$row['description']."</p>";
-            echo "</div>";
-        }
-	echo "</div>";
+        echo "<div style='background: white;' class='modal-content col-md-offset-1 col-md-10' >";
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<div id='img_div' style='width: 30%;float: left'>";
+                echo "<img src='images/".$row['photo']."'>";
+                echo "<p>".$row['title']."</p>";
+                echo "<p>".$row['description']."</p>";
+                echo "</div>";
+            }
+        echo "</div>";
     echo "</div>";
 	?>
 
