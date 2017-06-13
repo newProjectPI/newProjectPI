@@ -256,23 +256,52 @@
             <hr>
             <div class="col-md-12" style="height: 200px">
                 <div style="height:100%;" class="col-md-4">
-
-                    <a href="#"><h4 align="center"><b>Meet ua</b></h4></a><br>
-                    <a href="#"><h4 align="center">facebook</h4></a><br>
-                    <a href="#"><h4 align="center">Istagram</h4></a><br>
-                    <a href="#"><h4 align="center">twister</h4></a>
-
+                    <a href="#">
+                        <strong style="color: #000000;">
+                            ABOUT PANDA SHOP
+                        </strong>
+                    </a> <br>
+                    <a href="#" style="color: darkslategrey">About us</a> <br>
+                    <a href="#" style="color: darkslategrey">Careers</a> <br>
+                    <a href="#" style="color: darkslategrey">Terms&Conditions</a> <br>
+                    <a href="#" style="color: darkslategrey">Privacy Policy</a>
 
                 </div>
                 <div style="height: 100%;" class="col-md-4">
-                    <a href="#"><h4 align="center">About panda shop</h4></a><br>
-                    <a href="#"><h4 align="center">about us</h4></a>
+                    <a href="#">
+                        <strong style="color: #000000">
+                            MEET US ON
+                        </strong>
+                    </a> <br>
+                    <a href="#" style="color: darkslategrey">Facebook</a><br>
+                    <a href="#" style="color: darkslategrey">Instagram</a><br>
+                    <a href="#" style="color: darkslategrey">Twitter</a><br>
+                    <a href="#" style="color: darkslategrey">YouTube</a>
 
                 </div>
-                <div style="height: 100%;background: blue" class="col-md-4">
-
+                <div class="col-md-4">
+                    <a href="#">
+                        <strong style="color: #000000">
+                            BRANCH
+                        </strong>
+                    </a> <br>
+                    <a style="color: darkslategrey">
+                        Kompong Cham
+                    </a><br>
+                    <a style="color: darkslategrey">
+                        Battambang
+                    </a><br>
+                    <a style="color: darkslategrey">
+                        Kompong Chnang
+                    </a><br>
+                    <a style="color: darkslategrey">
+                        Kompong Speu
+                    </a>
                 </div>
-
+            </div>
+            <hr>
+            <div style="margin-bottom: 70px">
+                <p align="center">&copy; 2017 Panda Shop. All rights reserved | Design by <a href="http://panda_shop.com/">Panda Shop</a></p>
             </div>
         </div>
 
