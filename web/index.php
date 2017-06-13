@@ -47,22 +47,26 @@
 	
 	<!-- header modal -->
 	<!-- header -->
-	<div class="header" id="home1" >
+    <div id="contain_all" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="border: 1px solid black;background: #f2f2f2">
+	<div class="header" id="home1" style="border: 1px solid black" >
 		<div class="container">
+            <div>
+                <img src="images/logo.png" style="width: 100px; height: 100px;margin-top: -10px">
+            </div>
 
 			<div class="w3l_logo">
 				<h1 align="center"><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>
 			</div>
-			<div class="search">
-				<input class="search_box" type="checkbox" id="search_box">
-				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-				<div class="search_form">
-					<form action="#" method="post">
-						<input type="text" name="Search" placeholder="Search...">
-						<input type="submit" value="Send">
-					</form>
-				</div>
-			</div>
+            <div class="col-lg-3 col-md-3 " style="margin-top: 10px;margin-left: 80px">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px">
+
+                    </button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
 			<!-- <div class="cart cart box_1"> 
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
@@ -131,66 +135,67 @@
 			</nav>
 		</div>
 	</div>
-	<!-- //navigation -->
+    <!--best promotion-->
+
+        <div class="container" style="border: 1px solid black">
+            <div class="col-md-12 w3agile_special_deals_grid_left" style="border: 1px solid black;" >
+                <div class="w3agile_special_deals_grid_left_grid">
+                    <img src="images/21.jpg" alt=" " class="img-responsive" style="height: 200px" />
+                    <div class="w3agile_special_deals_grid_left_grid_pos1">
+                        <h5>30%<span>Off</span></h5>
+                    </div>
+                    <div class="w3agile_special_deals_grid_left_grid_pos">
+                        <h4>We Offer <span>Best Products</span></h4>
+                    </div>
+                </div>
+            </div>
+            <?php
+            $msg = "";
+            if (isset($_POST['upload'])) {
+                $target = "images/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("localhost", "root", "", "pcphotc");
+                $photo = $_FILES['image']['name'];
+                $title = $_POST['title'];
+                $description = $_POST['text'];
+                $sql = "INSERT INTO computer (title, photo,description) VALUES ('$title','$photo', '$description')";
+                mysqli_query($db, $sql);
+
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+                    $msg = "Image Uploaded Successfully";
+                } else {
+                    $msg = "There Was A problem uploading image";
+                }
+            }
+            ?>
+
+            <?php
+            $db = mysqli_connect("localhost","root","","pcphotc");
+            $sql = "SELECT * FROM computer";
+            $result = mysqli_query($db,$sql);
+
+            echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+
+                    echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
+
+                    echo "<p>".$row['title']."</p>";
+
+                    echo "<p>".$row['description']."</p>";
+                    echo "</div>";
+                }
+            echo "</div>";
+
+            ?>
+        </div>
+
 
 	<!-- //banner --> 
 	<!-- banner-bottom -->
-	<?php
-	$msg = "";
-	if (isset($_POST['upload'])) {
-		$target = "images/".basename($_FILES['image']['name']);
-		$db = mysqli_connect("localhost", "root", "", "pcphotc");
-		$photo = $_FILES['image']['name'];
-		$title = $_POST['title'];
-		$description = $_POST['text'];
-		$sql = "INSERT INTO computer (title, photo,description) VALUES ('$title','$photo', '$description')";
-		mysqli_query($db, $sql);
-
-		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$msg = "Image Uploaded Successfully";
-		} else {
-			$msg = "There Was A problem uploading image";
-		}
-	}
-	?>
-	
-	<?php
-	$db = mysqli_connect("localhost","root","","pcphotc");
-	$sql = "SELECT * FROM computer";
-	$result = mysqli_query($db,$sql);
-	echo "<div class=' col-md-12' style='margin-top: 10px'>";
-        echo "<div style='background: white;' class='modal-content col-md-offset-1 col-md-10' >";
-            while ($row = mysqli_fetch_array($result)) {
-                echo "<div id='img_div' style='width: 30%;float: left'>";
-                echo "<img src='images/".$row['photo']."'>";
-                echo "<p>".$row['title']."</p>";
-                echo "<p>".$row['description']."</p>";
-                echo "</div>";
-            }
-        echo "</div>";
-    echo "</div>";
-	?>
-
-	<div class="special-deals">
-		<div class="container">
-			<h2>Special promotion</h2>
-			<div class="w3agile_special_deals_grids">
-				<div class="col-md-7 w3agile_special_deals_grid_left">
-					<div class="w3agile_special_deals_grid_left_grid">
-						<img src="images/21.jpg" alt=" " class="img-responsive" />
-						<div class="w3agile_special_deals_grid_left_grid_pos1">
-							<h5>30%<span>Off</span></h5>
-						</div>
-						<div class="w3agile_special_deals_grid_left_grid_pos">
-							<h4>We Offer <span>Best Products</span></h4>
-						</div>
-					</div>
 
 
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+
+
 
 	<!-- top-brands -->
         <div id="footer" class="col-md-12" style="height: 200px;">
@@ -267,8 +272,8 @@
 
             </div>
         </div>
-	
 
+    </div>
 
 
 
