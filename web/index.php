@@ -49,23 +49,28 @@
 	<!-- header -->
     <div id="contain_all" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="border: 1px solid black;background: #f2f2f2">
 	<div class="header" id="home1" style="border: 1px solid black" >
-		<div class="container">
+		<div class="container" style="border: 1px solid blue;margin-top: -10px;padding: 0">
             <div>
                 <img src="images/logo.png" style="width: 100px; height: 100px;margin-top: -10px">
             </div>
 
+
 			<div class="w3l_logo">
 				<h1 align="center"><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>
 			</div>
-            <div class="col-lg-3 col-md-3 " style="margin-top: 10px;margin-left: 80px">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
+            <div class=" col-md-3 " style="border: 1px solid black;width: 33%;margin-top: 10px">
+                <div class="input-group col-md-8" style="float: left">
+                    <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
                     <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px">
 
                     </button>
                     </span>
                 </div><!-- /input-group -->
+                <div style="float: right" class="col-md-4">
+                    <a href="#" ><button class="btn btn-info fa fa-user"></button></a>
+                </div>
+
             </div><!-- /.col-lg-6 -->
 			<!-- <div class="cart cart box_1"> 
 				<form action="#" method="post" class="last"> 
@@ -78,7 +83,7 @@
 	</div>
 	<!-- //header -->
 	<!-- navigation -->
-	<div class="navigation" style="background: #737373">
+	<div class="navigation" style="background: #737373;margin: 0;margin-left: 0">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -89,6 +94,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
@@ -123,6 +129,8 @@
 							</ul>
 						</li>
 						<li><a href="about.php">About Us</a></li>
+
+
 						<!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 							 	<li><a href="icons.html">Web Icons</a></li>
@@ -130,6 +138,7 @@
 							</ul>
 						</li>  -->
 						<li><a href="mail.php">Contact Us</a></li>
+
 					</ul>
 				</div>
 			</nav>
