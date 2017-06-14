@@ -48,33 +48,77 @@
 	<!-- header modal -->
 	<!-- header -->
     <div id="contain_all" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="border: 1px solid black;background: #f2f2f2">
-	<div class="header" id="home1" style="border: 1px solid black" >
-		<div class="container" style="border: 1px solid blue;margin-top: -10px;padding: 0">
-            <div>
-                <img src="images/logo.png" style="width: 100px; height: 100px;margin-top: -10px">
+	<div class="header" style="border: 1px solid black;background: white;">
+		<div class="container" style="border: 1px solid blue;margin-top: -2%">
+            <div style="width: 30%;float: left">
+                <img src="images/logo.png" style="width: 60px; height: 60px;">
+               <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
             </div>
 
 
-			<div class="w3l_logo">
-				<h1 align="center"><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>
-			</div>
-            <div class=" col-md-3 " style="border: 1px solid black;width: 33%;margin-top: 10px">
+<!--			<div class="w3l_logo" style="border: 1px solid black;" >-->
+<!--				<h1 ><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>-->
+<!--			</div>-->
+            <div class=" col-md-5 " style="width: 70%;margin-top: 10px;">
                 <div class="input-group col-md-8" style="float: left">
                     <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
-                    <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px">
+                    <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px;">
 
                     </button>
                     </span>
                 </div><!-- /input-group -->
                 <div style="float: right" class="col-md-4">
-                    <a href="#" ><button class="btn btn-info fa fa-user"></button></a>
+                    <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="float: right"></button>
                 </div>
 
             </div><!-- /.col-lg-6 -->
-		
+
 		</div>
 	</div>
+        <!--loing-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+            <div class="modal-dialog" role="document" style="width: 60%" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel" align="center">Log in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="margin-left: 10%">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="margin-left: 10%">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
+                                    <input type="checkbox" name="check">Remember me
+                                </div>
+                            </div>
+                            <div style="margin-left: 25%">
+                                <button type="button" class="btn btn-primary">Sign in</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+
+                        </form>
+                        <hr>
+                        <div>
+                            <a href="#" style="float: right;">sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	<!-- //header -->
 	<!-- navigation -->
 	<div class="navigation" style="background: #737373;margin: 0;margin-left: 0">
@@ -152,6 +196,7 @@
                     </div>
                 </div>
             </div>
+
             <?php
             $msg = "";
             if (isset($_POST['upload'])) {
