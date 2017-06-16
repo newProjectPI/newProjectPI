@@ -42,40 +42,37 @@
 <body style="background: #f2f2f2">
 	<!-- for bootstrap working -->
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-	<!-- //for bootstrap working -->
-	<!-- header modal -->
-	
-	<!-- header modal -->
-	<!-- header -->
-    <div id="contain_all" class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="border: 1px solid black;background: #f2f2f2">
-	<div class="header" style="border: 1px solid black;background: white;">
-		<div class="container" style="border: 1px solid blue;margin-top: -2%">
-            <div style="width: 30%;float: left">
+
+	<div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
+		<div class="container" style="margin-top: -2%">
+            <div style="width: 30%;float: left;">
                 <img src="images/logo.png" style="width: 60px; height: 60px;">
                <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
             </div>
 
+            <form role="form" action="search.php" method="get" style="width: 65%;float: left;margin:0;">
+                <div class="row" style=" width: 100%">
+                    <div class="col-lg-6" style="width: 80%;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for..." name="query" >
+                            <span class="input-group-btn">
+                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
 
-<!--			<div class="w3l_logo" style="border: 1px solid black;" >-->
-<!--				<h1 ><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>-->
-<!--			</div>-->
-            <div class=" col-md-5 " style="width: 70%;margin-top: 10px;">
-                <div class="input-group col-md-8" style="float: left">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-                    <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px;">
-
-                    </button>
+                        </button>
                     </span>
-                </div><!-- /input-group -->
-                <div style="float: right" class="col-md-4">
-                    <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="float: right"></button>
-                </div>
+                        </div><!-- /input-group -->
 
-            </div><!-- /.col-lg-6 -->
+                    </div><!-- /.col-lg-6 -->
+
+                </div><!-- /.row -->
+            </form>
+            <div style="float: right">
+                <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
+            </div>
 
 		</div>
 	</div>
+
         <!--loing-->
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
@@ -104,24 +101,24 @@
                                     <input type="checkbox" name="check">Remember me
                                 </div>
                             </div>
-                            <div style="margin-left: 25%">
-                                <button type="button" class="btn btn-primary">Sign in</button>
+                            <a style="margin-left: 25%">
+                                <button type="submit" class="btn btn-primary">Sign in</button>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
-
-
+                            <hr>
+                        <a href="signUp.php" style="float: right;margin-right: 20px;margin-top: -10px">sign up</a>
                         </form>
-                        <hr>
-                        <div>
-                            <a href="#" style="float: right;">sign up</a>
-                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
 	<!-- //header -->
 	<!-- navigation -->
-	<div class="navigation" style="background: #737373;margin: 0;margin-left: 0">
+	<div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -182,6 +179,10 @@
 			</nav>
 		</div>
 	</div>
+
+
+
+
     <!--best promotion-->
 
         <div class="container" style="border: 1px solid black">
@@ -343,14 +344,15 @@
                         Kompong Speu
                     </a>
                 </div>
+
             </div>
-            <hr>
+
             <div style="margin-bottom: 70px">
                 <p align="center">&copy; 2017 Panda Shop. All rights reserved | Design by <a href="http://panda_shop.com/">Panda Shop</a></p>
             </div>
         </div>
 
-    </div>
+<!--   </div>-->
 
 
 

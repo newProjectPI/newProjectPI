@@ -14,12 +14,14 @@
     <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style_s.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <!-- //Custom Theme files -->
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown -->
     <!-- //js -->
     <!-- web fonts -->
@@ -27,28 +29,23 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
     <body>
-    <div class="header col-md-12 col-sm-12 col-xs-12" style="border: 1px solid black;background: white;">
-        <div class="container col-md-12 col-sm-12 col-xs-12" style="border: 1px solid blue;margin-top: -2%">
-            <div style="width: 30%;float: left;border: 1px solid black">
-                <img src="images/logo.png" class="col-md-3 col-sm-3 col-xs-3" style="height: 8%">
+    <div class="header navbar-fixed-top col-md-12" style="background: white;">
+        <div class="container" style="margin-top: -2%">
+            <div style="width: 30%;float: left">
+                <img src="images/logo.png" style="width: 60px; height: 60px;">
                 <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
             </div>
-
-
-            <!--			<div class="w3l_logo" style="border: 1px solid black;" >-->
-            <!--				<h1 ><a href="index.php">Panda PC Shop<span>Your stores. Your place.</span></a></h1>-->
-            <!--			</div>-->
-            <div class=" col-md-5 " style="width: 70%;margin-top: 10px;">
-                <div class="input-group col-md-8" style="float: left">
-                    <input type="text" class="form-control" placeholder="Search">
+            <div style="width: 70%;margin-top: 10px;height: 10%;float: right">
+                <div class="input-group" style="float: left;width: 70%">
+                    <input type="text" placeholder="search" class="form-control" style="float: left">
                     <span class="input-group-btn">
                     <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px;">
 
                     </button>
                     </span>
                 </div><!-- /input-group -->
-                <div style="float: right" class="col-md-4">
-                    <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="float: right"></button>
+                <div style="float: right">
+                    <button class="btn btn-primary glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" style="float: left"></button>
                 </div>
 
             </div><!-- /.col-lg-6 -->
@@ -56,7 +53,7 @@
         </div>
     </div>
     <!--navegation bar-->
-    <div class="navigation" style="background: #737373;margin: 0;margin-left: 0">
+    <div class="navigation col-md-12" style="background: #737373;margin-top: 76px;margin-left: 0">
         <div class="container">
             <nav class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -117,13 +114,29 @@
             </nav>
         </div>
     </div>
-    <div id="div_contain">
-       
+
+<!--    signUp-->
+    <div class="col-md-12" style="margin-top: 10px">
+        <div style="width: 70%;margin: auto;" class="modal-content">
+        <br>
+        <h2  align="center">Create new account</h2>
+        <div style="width:60%;margin: auto;"><br>
+            <input type="text" class="form-control" placeholder="First Name"><br>
+            <input type="text" class="form-control" placeholder="Last Name"><br>
+            <input type="text" class="form-control" placeholder="User Name"><br>
+            <input type="text" class="form-control" placeholder="Email or Phone Number"><br>
+            <input type="text" class="form-control" placeholder="Password"><br>
+            <input type="submit" value="Sign up" class="btn btn-primary">
+            <input type="submit" value="cancel" class="btn btn-info">
+
+        </div><br>
+        </div>
+
     </div>
 
 
 
-
+<!--    end-->
     <div id="footer" class="col-md-12" style="height: 200px;">
         <hr>
 
