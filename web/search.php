@@ -191,7 +191,7 @@
     $sql = "select * from computer where title = '$query'";
     $result = $db->query($sql);
 
-    echo "<div style='border: 1px solid black' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+    echo "<div style='border: 1px solid black;margin: auto' class='col-md-12 col-sm-12 col-lg-10 col-xs-12' >";
     while ($row = mysqli_fetch_array($result)) {
         echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
 

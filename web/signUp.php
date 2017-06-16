@@ -29,31 +29,82 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
     <body>
-    <div class="header navbar-fixed-top col-md-12" style="background: white;">
+    <div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
         <div class="container" style="margin-top: -2%">
-            <div style="width: 30%;float: left">
+            <div style="width: 30%;float: left;">
                 <img src="images/logo.png" style="width: 60px; height: 60px;">
                 <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
             </div>
-            <div style="width: 70%;margin-top: 10px;height: 10%;float: right">
-                <div class="input-group" style="float: left;width: 70%">
-                    <input type="text" placeholder="search" class="form-control" style="float: left">
-                    <span class="input-group-btn">
-                    <button class="btn btn-primary glyphicon glyphicon-search" type="button" style="margin-top: -2px;">
 
-                    </button>
+            <form role="form" action="search.php" method="get" style="width: 65%;float: left;margin:0;">
+                <div class="row" style=" width: 100%">
+                    <div class="col-lg-6" style="width: 80%;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for..." name="query" >
+                            <span class="input-group-btn">
+                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
+
+                        </button>
                     </span>
-                </div><!-- /input-group -->
-                <div style="float: right">
-                    <button class="btn btn-primary glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" style="float: left"></button>
-                </div>
+                        </div><!-- /input-group -->
 
-            </div><!-- /.col-lg-6 -->
+                    </div><!-- /.col-lg-6 -->
+
+                </div><!-- /.row -->
+            </form>
+            <div style="float: right">
+                <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
+            </div>
 
         </div>
     </div>
-    <!--navegation bar-->
-    <div class="navigation col-md-12" style="background: #737373;margin-top: 76px;margin-left: 0">
+
+    <!--loing-->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div class="modal-dialog" role="document" style="width: 60%" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel" align="center">Log in</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="margin-left: 10%">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="margin-left: 10%">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
+                                <input type="checkbox" name="check">Remember me
+                            </div>
+                        </div>
+                        <a style="margin-left: 25%">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <hr>
+                <a href="signUp.php" style="float: right;margin-right: 20px;margin-top: -10px">sign up</a>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- //header -->
+    <!-- navigation -->
+    <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
         <div class="container">
             <nav class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
