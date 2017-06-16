@@ -1,4 +1,4 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Page sign up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
+<div class="header navbar-fixed-top" style="background: white;">
     <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
@@ -166,7 +166,14 @@
 <div id="div_contain" class="col-lg-12" style="height: 300px;margin-top: 10px">
     <div style="width: 90%;height: 100%;margin: auto">
         <div style="width: 20%;height: 100%;float: left" class="modal-content">
-
+            <div class="list-group">
+                <a href="#" class="list-group-item">User</a>
+                <a href="#" class="list-group-item">Chat</a>
+                <a href="#" class="list-group-item">Update Product</a>
+                <a href="#" class="list-group-item">Delete Product</a>
+                <a href="#" class="list-group-item">Insert Product</a>
+                <a href="#" class="list-group-item">List Product</a>
+            </div>
         </div>
         <div style="width: 78%;height: 100%;float: right" class="modal-content">
 
