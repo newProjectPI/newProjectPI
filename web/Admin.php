@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
-    <title>Panda Shop</title>
-    <!-- for-mobile-apps -->
+    <title>Page sign up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -27,22 +25,8 @@
     <!-- web fonts -->
     <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <!-- //web fonts -->
-    <!-- start-smooth-scrolling -->
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-            });
-        });
-    </script>
-    <!-- //end-smooth-scrolling -->
 </head>
-<body style="background: #f2f2f2">
-<!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
+<body>
 <div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
     <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
@@ -116,8 +100,7 @@
     </div>
 </div>
 </div>
-<!-- //header -->
-<!-- navigation -->
+<!--navigation-->
 <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -180,30 +163,19 @@
     </div>
 </div>
 
-    <?php
-    $db = mysqli_connect("localhost","root","","pcphotc");
-    if (isset($_GET['submit'])) {
-        $query = $_GET['query'];
-    }
-    else {
-        $query = '';
-    }
-    $sql = "select * from computer where title = '$query'";
-    $result = $db->query($sql);
+<div id="div_contain" class="col-lg-12" style="height: 300px;margin-top: 10px">
+    <div style="width: 90%;height: 100%;margin: auto">
+        <div style="width: 20%;height: 100%;float: left" class="modal-content">
 
-    echo "<div style='border: 1px solid black;margin: auto' class='col-md-12 col-sm-12 col-lg-10 col-xs-12' >";
-    while ($row = mysqli_fetch_array($result)) {
-        echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+        </div>
+        <div style="width: 78%;height: 100%;float: right" class="modal-content">
 
-        echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
+        </div>
+    </div>
+</div>
 
-        echo "<p>".$row['title']."</p>";
 
-        echo "<p>".$row['description']."</p>";
-        echo "</div>";
-    }
-    echo "</div>";
-    ?>
+
 
 <div id="footer" class="col-md-12" style="height: 200px;">
     <hr>
@@ -309,13 +281,5 @@
         <p align="center">&copy; 2017 Panda Shop. All rights reserved | Design by <a href="http://panda_shop.com/">Panda Shop</a></p>
     </div>
 </div>
-
-<!--   </div>-->
-
-
-
-
-
-
 </body>
 </html>
