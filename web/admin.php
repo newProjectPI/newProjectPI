@@ -1,10 +1,3 @@
-
-/**
- * Created by PhpStorm.
- * User: Neth
- * Date: 16-Jun-17
- * Time: 2:03 PM
- */
 <html>
 <head>
     <title>Page sign up</title>
@@ -34,7 +27,7 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="header navbar-fixed-top" style="background: white">
+<div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
     <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
@@ -90,7 +83,7 @@
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
                             <input type="checkbox" name="check">Remember me
-</div>
+                        </div>
                     </div>
                     <a style="margin-left: 25%">
                         <button type="submit" class="btn btn-primary">Sign in</button>
@@ -108,7 +101,7 @@
 </div>
 </div>
 <!--navigation-->
-<div class="navigation" style="background: #737373;margin-top: 50px;margin-left: 0">
+<div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -173,14 +166,7 @@
 <div id="div_contain" class="col-lg-12" style="height: 300px;margin-top: 10px">
     <div style="width: 90%;height: 100%;margin: auto">
         <div style="width: 20%;height: 100%;float: left" class="modal-content">
-            <div class="list-group">
-                <a href="#" class="list-group-item">User</a>
-                <a href="#" class="list-group-item">Chat</a>
-                <a href="#" class="list-group-item">Update Product</a>
-                <a href="#" class="list-group-item">Delete Product</a>
-                <a href="#" class="list-group-item">Insert Product</a>
-                <a href="#" class="list-group-item">List Product</a>
-            </div>
+
         </div>
         <div style="width: 78%;height: 100%;float: right" class="modal-content">
 
@@ -214,8 +200,8 @@
             </ul>
         </div>
         <script type="text/javascript">
-    $(window).load(function() {
-        $("#flexiselDemo1").flexisel({
+            $(window).load(function() {
+                $("#flexiselDemo1").flexisel({
                     visibleItems: 4,
                     animationSpeed: 1000,
                     autoPlay: true,
@@ -223,20 +209,21 @@
                     pauseOnHover: true,
                     enableResponsiveBreakpoints: true,
                     responsiveBreakpoints: {
-            portrait: {
-                changePoint:480,
+                        portrait: {
+                            changePoint:480,
                             visibleItems: 1
                         },
-            landscape: {
-                changePoint:640,
+                        landscape: {
+                            changePoint:640,
                             visibleItems:2
                         },
-            tablet: {
-                changePoint:768,
+                        tablet: {
+                            changePoint:768,
                             visibleItems: 3
                         }
-        }
+                    }
                 });
+
             });
         </script>
         <script type="text/javascript" src="js/jquery.flexisel.js"></script>
@@ -247,8 +234,8 @@
         <div style="height:100%;" class="col-md-4">
             <a href="#">
                 <strong style="color: #000000;">
-    ABOUT PANDA SHOP
-</strong>
+                    ABOUT PANDA SHOP
+                </strong>
             </a> <br>
             <a href="#" style="color: darkslategrey">About us</a> <br>
             <a href="#" style="color: darkslategrey">Careers</a> <br>
@@ -259,8 +246,8 @@
         <div style="height: 100%;" class="col-md-4">
             <a href="#">
                 <strong style="color: #000000">
-    MEET US ON
-</strong>
+                    MEET US ON
+                </strong>
             </a> <br>
             <a href="#" style="color: darkslategrey">Facebook</a><br>
             <a href="#" style="color: darkslategrey">Instagram</a><br>
@@ -271,21 +258,21 @@
         <div class="col-md-4">
             <a href="#">
                 <strong style="color: #000000">
-    BRANCH
+                    BRANCH
                 </strong>
             </a> <br>
             <a style="color: darkslategrey">
-    Kompong Cham
-</a><br>
-            <a style="color: darkslategrey">
-    Battambang
+                Kompong Cham
             </a><br>
             <a style="color: darkslategrey">
-    Kompong Chnang
-</a><br>
+                Battambang
+            </a><br>
             <a style="color: darkslategrey">
-    Kompong Speu
-</a>
+                Kompong Chnang
+            </a><br>
+            <a style="color: darkslategrey">
+                Kompong Speu
+            </a>
         </div>
 
     </div>
