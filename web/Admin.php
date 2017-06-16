@@ -163,8 +163,15 @@
     </div>
 </div>
 
-<div id="div_contain">
+<div id="div_contain" class="col-lg-12" style="height: 300px;margin-top: 10px">
+    <div style="width: 90%;height: 100%;margin: auto">
+        <div style="width: 20%;height: 100%;float: left" class="modal-content">
 
+        </div>
+        <div style="width: 78%;height: 100%;float: right" class="modal-content">
+
+        </div>
+    </div>
 </div>
 
 
