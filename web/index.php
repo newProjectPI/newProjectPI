@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="well">
-                            <form id="loginForm" method="POST" action="postLogin.php" novalidate="novalidate">
+                            <form id="loginForm" method="POST" action="postLogin.php" novalidate="novalidate" style="width: 100%">
                                 <div class="form-group">
                                     <label for="username" class="control-label">Username</label>
                                     <input type="text" class="form-control" id="username" name="first_Name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
@@ -97,12 +97,11 @@
                                     <input type="password" class="form-control" id="password" name="passWord" value="" required="" title="Please enter your password">
                                     <span class="help-block"></span>
                                 </div>
-                                <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="r" id="remember"> Remember login
-                                    </label>
-                                    <p class="help-block">(if this is a private computer)</p>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn btn-success btn-block">Login</button>
                                 <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>

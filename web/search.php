@@ -75,46 +75,43 @@
 
 <!--loing-->
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-    <div class="modal-dialog" role="document" style="width: 60%" >
-        <div class="modal-content">
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" align="center">Log in</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="margin-left: 10%">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="postLogin.php" novalidate="novalidate" style="width: 100%">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="first_Name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="passWord" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
+                            </form>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="margin-left: 10%">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
-                            <input type="checkbox" name="check">Remember me
-                        </div>
-                    </div>
-                    <a style="margin-left: 25%">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <hr>
-            <a href="signUp.php" style="float: right;margin-right: 20px;margin-top: -10px">sign up</a>
-            </form>
-
-
-
-
         </div>
     </div>
-</div>
 </div>
 <!-- //header -->
 <!-- navigation -->
@@ -180,30 +177,26 @@
     </div>
 </div>
 
-    <?php
-    $db = mysqli_connect("localhost","root","","pcphotc");
-    if (isset($_GET['submit'])) {
-        $query = $_GET['query'];
-    }
-    else {
-        $query = '';
-    }
-    $sql = "select * from computer where title = '$query'";
-    $result = $db->query($sql);
-
-    echo "<div style='border: 1px solid black;margin: auto' class='col-md-12 col-sm-12 col-lg-10 col-xs-12' >";
-    while ($row = mysqli_fetch_array($result)) {
-        echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
-
-        echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
-
-        echo "<p>".$row['title']."</p>";
-
-        echo "<p>".$row['description']."</p>";
-        echo "</div>";
-    }
+<?php
+$db = mysqli_connect("localhost","root","","pcphotc");
+if (isset($_GET['submit'])) {
+    $query = $_GET['query'];
+}
+else {
+    $query = '';
+}
+$sql = "select * from computer where title = '$query'";
+$result = $db->query($sql);
+echo "<div style='border: 1px solid black;margin: auto' class='col-md-12 col-sm-12 col-lg-10 col-xs-12' >";
+while ($row = mysqli_fetch_array($result)) {
+    echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+    echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
+    echo "<p>".$row['title']."</p>";
+    echo "<p>".$row['description']."</p>";
     echo "</div>";
-    ?>
+}
+echo "</div>";
+?>
 
 <div id="footer" class="col-md-12" style="height: 200px;">
     <hr>
@@ -251,7 +244,6 @@
                         }
                     }
                 });
-
             });
         </script>
         <script type="text/javascript" src="js/jquery.flexisel.js"></script>
