@@ -92,12 +92,7 @@
 							</ul>
 						</li>
 						<li><a href="about.html" class="act">About Us</a></li> 
-						<!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="icons.html">Web Icons</a></li>
-								<li><a href="codes.html">Short Codes</a></li>     
-							</ul>
-						</li>   -->
+
 						<li><a href="mail.php">Contact Us</a></li>
 					</ul>
 				</div>

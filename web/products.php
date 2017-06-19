@@ -756,15 +756,7 @@
 									<button type="submit" class="w3ls-cart">Add to cart</button>
 								</form>
 							</div>
-							<!-- <h5>Color</h5>
-							<div class="color-quality">
-								<ul>
-									<li><a href="#"><span></span></a></li>
-									<li><a href="#" class="brown"><span></span></a></li>
-									<li><a href="#" class="purple"><span></span></a></li>
-									<li><a href="#" class="gray"><span></span></a></li>
-								</ul>
-							</div> -->
+							
 						</div>
 						<div class="clearfix"> </div>
 					</div>
