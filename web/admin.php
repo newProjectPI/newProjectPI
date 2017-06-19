@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title>Page sign up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="header navbar-fixed-top" style="background: white;">
+<div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
     <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
@@ -118,78 +118,107 @@
     </div>
 </div>
 
-<div id="div_contain" class="col-lg-12" style="height: 300px;margin-top: 10px">
+<div id="div_contain" class="col-lg-12" style="margin-top: 10px">
     <div style="width: 90%;height: 100%;margin: auto">
-        <div style="width: 20%;height: 100%;float: left" class="modal-content">
+        <div style="width: 20%;height: 290px;float: left" class="modal-content">
             <div class="list-group">
-                <a href="#" class="list-group-item">User</a>
+                <a href="#" class="list-group-item" style="background: #33cccc;color: white;text-align: center">MENU</a>
+
+                <a href="#" id="member" class="list-group-item">Member</a>
                 <a href="#" class="list-group-item">Chat</a>
                 <a href="#" class="list-group-item">Update Product</a>
                 <a href="#" class="list-group-item">Delete Product</a>
-                <a href="#" class="list-group-item">Insert Product</a>
+                <a href="#" id="insert" class="list-group-item">Insert Product</a>
                 <a href="#" class="list-group-item">List Product</a>
             </div>
         </div>
-        <div style="width: 78%;height: 100%;float: right" class="modal-content">
+        <div id="user" style="width: 78%;float: right;" class="modal-content" >
+            <?php
+            $db = mysqli_connect("localhost","root","","pcphotc");
+            $sql = "SELECT * FROM account";
+            $result = mysqli_query($db,$sql);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<a href='#'>";
+                echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+                echo "<p>".$row['username']."</p>";
+                echo "<p>".$row['email']."</p>";
+                echo "</div>";
+                echo "</a>";
 
+            }
+            echo "</div>";
+            ?>
+
+            <div id="content" class="modal-content" style="display: none">
+                <form id="form" method="post" action="postImage.php" enctype="multipart/form-data" style="width: 70%">
+                    <input type="hidden"  name="size" value="1000000" />
+                    <h2 align="center">Insert new computer</h2>
+                    <div>
+                        <input class="form-control" type="text" name="title" placeholder="title"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="hardisk" placeholder="hardisk"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="ram" placeholder="ram"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="vga" placeholder="vga"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="cpu" placeholder="cpu"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="model" placeholder="model"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="price" placeholder="price"/>
+                    </div>
+
+                    <div>
+                        <textarea name="text" cols="40" rows="4" placeholder="Say Something about This Image ..."></textarea>
+                    </div>
+                    <div>
+                        <input type="file" name="image" />
+                    </div>
+                    <div>
+                        <input class="btn btn-primary" type="submit" name="upload" value="upload image">
+                    </div>
+
+                </form>
+            </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#insert").click(function(){
+                    $("#content").show();
+                    $("#user").hide();
+
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function(){
+                $("#member").click(function(){
+                    $("#user").show();
+                    $("#content").hide();
+                });
+            });
+        </script>
+
+
     </div>
 </div>
 
 
 
 
-<div id="footer" class="col-md-12" style="height: 200px;">
-    <hr>
+<div id="footer" class="col-md-12">
 
-    <div class="container">
 
-        <div class="sliderfig">
-            <ul id="flexiselDemo1">
-                <li>
-                    <img src="images/tb1.jpg" alt=" " class="img-responsive" />
-                </li>
-                <li>
-                    <img src="images/dell-logo.jpg" alt=" " class="img-responsive" />
-                </li> -->
-                <li>
-                    <img src="images/tb3.jpg" alt=" " class="img-responsive" />
-                </li>
-                <!-- <li>
-                    <img src="images/tb4.jpg" alt=" " class="img-responsive" />
-                </li> -->
-
-            </ul>
-        </div>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $("#flexiselDemo1").flexisel({
-                    visibleItems: 4,
-                    animationSpeed: 1000,
-                    autoPlay: true,
-                    autoPlaySpeed: 3000,
-                    pauseOnHover: true,
-                    enableResponsiveBreakpoints: true,
-                    responsiveBreakpoints: {
-                        portrait: {
-                            changePoint:480,
-                            visibleItems: 1
-                        },
-                        landscape: {
-                            changePoint:640,
-                            visibleItems:2
-                        },
-                        tablet: {
-                            changePoint:768,
-                            visibleItems: 3
-                        }
-                    }
-                });
-
-            });
-        </script>
-        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    </div>
 
     <hr>
     <div class="col-md-12" style="height: 200px">

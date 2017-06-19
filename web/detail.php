@@ -44,18 +44,18 @@
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 
 <div class="header navbar-fixed-top" style="background: white">
-    <div class="container" style="margin-top: -2%;">
+    <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
             <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
         </div>
 
-        <form role="form" action="search.php" method="get" style="width: 55%;float: left;margin:0;">
+        <form role="form" action="search.php" method="get" style="width: 65%;float: left;margin:0;">
             <div class="row" style=" width: 100%">
-                <div class="col-lg-6" style="width: 90%;">
+                <div class="col-lg-6" style="width: 80%;">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for..." name="query" >
-                            <span class="input-group-btn">
+                        <span class="input-group-btn">
                         <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
 
                         </button>
@@ -66,66 +66,12 @@
 
             </div><!-- /.row -->
         </form>
-        <div style="width: 10%;float: right">
+        <div style="float: right">
             <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
-            <button class="btn btn-info btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm" style="margin-top: 15px">Logout</button>
         </div>
 
     </div>
 </div>
-
-<!--loing-->
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div id="login-overlay" class="modal-dialog">
-        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="well">
-                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
-                                <div class="form-group">
-                                    <label for="username" class="control-label">Username</label>
-                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="control-label">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div class="form-group">
-                                    <div>
-                                        <input type="checkbox" value="remember" name="check">Remember me
-                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-block">Login</button>
-                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--logout modal-->
-<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" >
-    <div class="modal-dialog modal-sm" style="width: 30%">
-        <div class="modal-content"><br>
-            <div class="modal-header"><h4 align="center">Logout <i class="fa fa-lock"></i></h4></div>
-            <div class="modal-body"> Are you sure you want to logout?</div>
-            <div class="modal-footer"><a href="logout.php" class="btn btn-primary btn-block">Logout</a></div>
-        </div>
-    </div>
-</div>
-<!-- //header -->
-<!-- navigation -->
 <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -187,70 +133,142 @@
         </nav>
     </div>
 </div>
+<div style="width: 100%;height: 800px">
+
+
+<?php
+require_once('dbconfig.php');
+if(isset($_GET["id"]) && !empty($_GET["id"])){
+    $id=$_GET["id"];
+    $sql = "select * from computer where id = '$id'";
+    $result = $connect->query($sql);
+    $row=mysqli_fetch_array($result);
+    echo "<div id='img_div' style='width: 25%;float: left;text-align: center;height: 290px;border: 1px solid gainsboro;background: white;margin-left: 20px'>";
+    echo "<img src='images/".$row['photo']."' style='width:95%;height:75%'>";
+    echo "<div style='background: rebeccapurple;height: 45px;margin-top: 235px;color: white'>";
+    echo "<p>".$row['title']."</p>";
+    echo "<p style='color: red'>".$row['price']."</p>";
+    echo "</div>";
+    echo "</div>";
+    echo "<div style='width: 70%;float: right;margin-top: 15px;background: white;margin-right: 20px' class='modal-content'>";
+        echo "<table style='width: 90%;border-spacing: 10px;margin: auto;margin-top: 10px' cellpadding='10%'>";
+            echo "<tr style='height: 30px;'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>HARDISK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                echo "<td>";
+                     echo  "<p>".$row['hardisk']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>RAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['ram']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>VGA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['vga']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                     echo "<p>CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                echo "<td>";
+                     echo  "<p>".$row['cpu']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>MODEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['model']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                 echo "<th style='width: 20%'>";
+                    echo "<p>DESCRITION&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                 echo "<td>";
+                    echo  "<p>".$row['description']."</p>";
+                 echo "</td>";
+            echo "</tr>";
 
 
 
+        echo "</table>";
+    echo "<br>";
+    echo "<div style='width: 50%;margin-left: 40px'>";
+         echo "<a href='#'>";
+            echo "<button type='button' class='btn btn-info btn-sm' style='width: 40%' > Add to cart</button>";
+         echo "</a>";
+         echo "<a href='chart.php'>";
+            echo "<button type='button' class='btn btn-success btn-sm' style='margin-left: 10px;width: 40%'> Chat to panda shop</button>";
+         echo "</a>";
+   echo "</div>";
 
-<!--best promotion-->
 
-<div class="container" >
-    <div class="col-md-12 w3agile_special_deals_grid_left"  >
-        <div class="w3agile_special_deals_grid_left_grid">
-            <img src="images/21.jpg" alt=" " class="img-responsive" style="height: 200px" />
-            <div class="w3agile_special_deals_grid_left_grid_pos1">
-                <h5>30%<span>Off</span></h5>
+    echo "<br>";
+    echo "<br>";
+
+    echo "</div>";
+
+
+}
+?>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
             </div>
-            <div class="w3agile_special_deals_grid_left_grid_pos">
-                <h4>We Offer <span>Best Products</span></h4>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" value="remember" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <?php
-    $msg = "";
-    if (isset($_POST['upload'])) {
-        $target = "images/".basename($_FILES['image']['name']);
-        $db = mysqli_connect("localhost", "root", "", "pcphotc");
-        $photo = $_FILES['image']['name'];
-        $title = $_POST['title'];
-        $description = $_POST['text'];
-        $sql = "INSERT INTO computer (title, photo,description) VALUES ('$title','$photo', '$description')";
-        mysqli_query($db, $sql);
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-            $msg = "Image Uploaded Successfully";
-        } else {
-            $msg = "There Was A problem uploading image";
-        }
-    }
-    ?>
-
-    <?php
-    $db = mysqli_connect("localhost","root","","pcphotc");
-    $sql = "SELECT * FROM computer";
-    $result = mysqli_query($db,$sql);
-    echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
-    while ($row = mysqli_fetch_array($result)) {
-        echo "<a href='detail.php?id=".$row['id']."'>";
-        echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
-        echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
-        echo "<p>".$row['title']."</p>";
-        echo "<p>".$row['price']."</p>";
-        echo "</div>";
-        echo "</a>";
-    }
-    echo "</div>";
-    ?>
 </div>
 
-
-<!-- //banner -->
-<!-- banner-bottom -->
-
-
-
-
-
-<!-- top-brands -->
 <div id="footer" class="col-md-12" style="height: 200px;">
     <hr>
 
@@ -364,3 +382,7 @@
 
 </body>
 </html>
+
+
+
+

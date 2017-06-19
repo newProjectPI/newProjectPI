@@ -6,15 +6,25 @@ if (isset($_POST['upload'])) {
     $photo = $_FILES['image']['name'];
     $title = $_POST['title'];
     $description = $_POST['text'];
-    $sql = "INSERT INTO computer (title, photo,description) VALUES ('$title','$photo', '$description')";
+    $hardisk = $_POST['hardisk'];
+    $ram = $_POST['ram'];
+    $vga = $_POST['vga'];
+    $cpu = $_POST['cpu'];
+    $model = $_POST['model'];
+    $price = $_POST['price'];
+
+    $sql = "INSERT INTO computer (title, photo,description,hardisk,ram,vga,cpu,model,price) VALUES ('$title','$photo', '$description','$hardisk','$ram','$vga','$cpu','$model','$price')";
     mysqli_query($db, $sql);
+    echo $sql;
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
         $msg = "Image Uploaded Successfully";
     } else {
         $msg = "There Was A problem uploading image";
     }
+
 }
+header("location: admin.php");
 ?>
 <html>
 <head>
@@ -60,7 +70,7 @@ if (isset($_POST['upload'])) {
     <!-- //end-smooth-scrolling -->
 </head>
 <body>
-<div id="content">
+<!--<div id="content" class="modal-content">-->
 <!--    --><?php
 //    $db = mysqli_connect("localhost","root","","pcphotc");
 //    $sql = "SELECT * FROM computer";
@@ -73,21 +83,42 @@ if (isset($_POST['upload'])) {
 //        echo "</div>";
 //    }
 //    ?>
-    <form method="post" action="postImage.php" enctype="multipart/form-data">
-        <input type="hidden"  name="size" value="1000000" />
-        <div>
-            <input type="file" name="image" />
-        </div>
-        <div>
-            <input type="text" name="title" />
-        </div>
-        <div>
-            <textarea name="text" cols="40" rows="4" placeholder="Say Something about This Image ..."></textarea>
-        </div>
-        <div>
-            <input type="submit" name="upload" value="upload image">
-        </div>
-    </form>
-</div>
+<!--    <form method="post" action="postImage.php" enctype="multipart/form-data" style="width: 70%">-->
+<!--        <input type="hidden"  name="size" value="1000000" />-->
+<!--        <h2 align="center">Insert new computer</h2>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="title" placeholder="title"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="hardisk" placeholder="hardisk"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="ram" placeholder="ram"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="vga" placeholder="vga"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="cpu" placeholder="cpu"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="model" placeholder="model"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="form-control" type="text" name="price" placeholder="price"/>-->
+<!--        </div>-->
+<!---->
+<!--        <div>-->
+<!--            <textarea name="text" cols="40" rows="4" placeholder="Say Something about This Image ..."></textarea>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input type="file" name="image" />-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input class="btn btn-primary" type="submit" name="upload" value="upload image">-->
+<!--        </div>-->
+<!---->
+<!--    </form>-->
+<!--</div>-->
 </body>
 </html>
