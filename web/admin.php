@@ -14,14 +14,12 @@
     <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style_s.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
     <!-- //Custom Theme files -->
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown -->
     <!-- //js -->
     <!-- web fonts -->
@@ -41,7 +39,7 @@
                 <div class="col-lg-6" style="width: 80%;">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for..." name="query" >
-                            <span class="input-group-btn">
+                        <span class="input-group-btn">
                         <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
 
                         </button>
@@ -52,58 +50,12 @@
 
             </div><!-- /.row -->
         </form>
-        <div style="float: right">
-            <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
-        </div>
-
     </div>
 </div>
 
 <!--loing-->
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-    <div class="modal-dialog" role="document" style="width: 60%" >
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" align="center">Log in</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="margin-left: 10%">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="margin-left: 10%">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
-                            <input type="checkbox" name="check">Remember me
-                        </div>
-                    </div>
-                    <a style="margin-left: 25%">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-            <hr>
-            <a href="signUp.php" style="float: right;margin-right: 20px;margin-top: -10px">sign up</a>
-            </form>
 
-
-
-
-        </div>
-    </div>
-</div>
-</div>
-<!-- //header -->
-<!-- navigation -->
+<!--navigation-->
 <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -166,79 +118,107 @@
     </div>
 </div>
 
-<!--    signUp-->
-<div class="col-md-12" style="margin-top: 10px">
-    <div style="width: 70%;margin: auto;" class="modal-content">
-        <br>
-        <h2  align="center">Create new account</h2>
-        <div style="width:60%;margin: auto;"><br>
-            <input type="text" class="form-control" placeholder="User Name"><br>
-            <input type="text" class="form-control" placeholder="E-mail"><br>
-            <input type="text" class="form-control" placeholder="Password"><br>
-            <select class="form-control" name="gender">
-                <option value="F">Female</option>
-                <option value="M">Male</option>
-            </select> <br>
-            <input type="submit" value="Sign up" class="btn btn-primary">
-            <input type="submit" value="cancel" class="btn btn-info">
-        </div><br>
-    </div>
+<div id="div_contain" class="col-lg-12" style="margin-top: 10px">
+    <div style="width: 90%;height: 100%;margin: auto">
+        <div style="width: 20%;height: 290px;float: left" class="modal-content">
+            <div class="list-group">
+                <a href="#" class="list-group-item" style="background: #33cccc;color: white;text-align: center">MENU</a>
 
+                <a href="#" id="member" class="list-group-item">Member</a>
+                <a href="#" class="list-group-item">Chat</a>
+                <a href="#" class="list-group-item">Update Product</a>
+                <a href="#" class="list-group-item">Delete Product</a>
+                <a href="#" id="insert" class="list-group-item">Insert Product</a>
+                <a href="#" class="list-group-item">List Product</a>
+            </div>
+        </div>
+        <div id="user" style="width: 78%;float: right;" class="modal-content" >
+            <?php
+            $db = mysqli_connect("localhost","root","","pcphotc");
+            $sql = "SELECT * FROM account";
+            $result = mysqli_query($db,$sql);
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<a href='#'>";
+                echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+                echo "<p>".$row['username']."</p>";
+                echo "<p>".$row['email']."</p>";
+                echo "</div>";
+                echo "</a>";
+
+            }
+            echo "</div>";
+            ?>
+
+            <div id="content" class="modal-content" style="display: none">
+                <form id="form" method="post" action="postImage.php" enctype="multipart/form-data" style="width: 70%">
+                    <input type="hidden"  name="size" value="1000000" />
+                    <h2 align="center">Insert new computer</h2>
+                    <div>
+                        <input class="form-control" type="text" name="title" placeholder="title"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="hardisk" placeholder="hardisk"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="ram" placeholder="ram"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="vga" placeholder="vga"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="cpu" placeholder="cpu"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="model" placeholder="model"/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="price" placeholder="price"/>
+                    </div>
+
+                    <div>
+                        <textarea name="text" cols="40" rows="4" placeholder="Say Something about This Image ..."></textarea>
+                    </div>
+                    <div>
+                        <input type="file" name="image" />
+                    </div>
+                    <div>
+                        <input class="btn btn-primary" type="submit" name="upload" value="upload image">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#insert").click(function(){
+                    $("#content").show();
+                    $("#user").hide();
+
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function(){
+                $("#member").click(function(){
+                    $("#user").show();
+                    $("#content").hide();
+                });
+            });
+        </script>
+
+
+    </div>
 </div>
 
 
 
-<!--    end-->
-<div id="footer" class="col-md-12" style="height: 200px;">
-    <hr>
 
-    <div class="container">
+<div id="footer" class="col-md-12">
 
-        <div class="sliderfig">
-            <ul id="flexiselDemo1">
-                <li>
-                    <img src="images/tb1.jpg" alt=" " class="img-responsive" />
-                </li>
-                <li>
-                    <img src="images/dell-logo.jpg" alt=" " class="img-responsive" />
-                </li> -->
-                <li>
-                    <img src="images/tb3.jpg" alt=" " class="img-responsive" />
-                </li>
-                <!-- <li>
-                    <img src="images/tb4.jpg" alt=" " class="img-responsive" />
-                </li> -->
 
-            </ul>
-        </div>
-        <script type="text/javascript">
-            $(window).load(function() {
-                $("#flexiselDemo1").flexisel({
-                    visibleItems: 4,
-                    animationSpeed: 1000,
-                    autoPlay: true,
-                    autoPlaySpeed: 3000,
-                    pauseOnHover: true,
-                    enableResponsiveBreakpoints: true,
-                    responsiveBreakpoints: {
-                        portrait: {
-                            changePoint:480,
-                            visibleItems: 1
-                        },
-                        landscape: {
-                            changePoint:640,
-                            visibleItems:2
-                        },
-                        tablet: {
-                            changePoint:768,
-                            visibleItems: 3
-                        }
-                    }
-                });
-            });
-        </script>
-        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    </div>
 
     <hr>
     <div class="col-md-12" style="height: 200px">

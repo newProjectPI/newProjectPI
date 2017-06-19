@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Page sign up</title>
+    <title>Panda Shop</title>
+    <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -14,22 +16,34 @@
     <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style_s.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
     <!-- //Custom Theme files -->
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown -->
     <!-- //js -->
     <!-- web fonts -->
     <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- //web fonts -->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
 </head>
-<body>
-<div class="header navbar-fixed-top" style="border: 1px solid black;background: white;">
+<body style="background: #f2f2f2">
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+<div class="header navbar-fixed-top" style="background: white">
     <div class="container" style="margin-top: -2%">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
@@ -41,7 +55,7 @@
                 <div class="col-lg-6" style="width: 80%;">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for..." name="query" >
-                            <span class="input-group-btn">
+                        <span class="input-group-btn">
                         <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
 
                         </button>
@@ -58,52 +72,6 @@
 
     </div>
 </div>
-
-<!--loing-->
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-    <div class="modal-dialog" role="document" style="width: 60%" >
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" align="center">Log in</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" style="margin-left: 10%">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="margin-left: 10%">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10" style="margin-left: 25%">
-                            <input type="checkbox" name="check">Remember me
-                        </div>
-                    </div>
-                    <a style="margin-left: 25%">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-            <hr>
-            <a href="signUp.php" style="float: right;margin-right: 20px;margin-top: -10px">sign up</a>
-            </form>
-
-
-
-
-        </div>
-    </div>
-</div>
-</div>
-<!-- //header -->
-<!-- navigation -->
 <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -165,30 +133,142 @@
         </nav>
     </div>
 </div>
+<div style="width: 100%;height: 800px">
 
-<!--    signUp-->
-<div class="col-md-12" style="margin-top: 10px">
-    <div style="width: 70%;margin: auto;" class="modal-content">
-        <br>
-        <h2  align="center">Create new account</h2>
-        <div style="width:60%;margin: auto;"><br>
-            <input type="text" class="form-control" placeholder="User Name"><br>
-            <input type="text" class="form-control" placeholder="E-mail"><br>
-            <input type="text" class="form-control" placeholder="Password"><br>
-            <select class="form-control" name="gender">
-                <option value="F">Female</option>
-                <option value="M">Male</option>
-            </select> <br>
-            <input type="submit" value="Sign up" class="btn btn-primary">
-            <input type="submit" value="cancel" class="btn btn-info">
-        </div><br>
-    </div>
 
+<?php
+require_once('dbconfig.php');
+if(isset($_GET["id"]) && !empty($_GET["id"])){
+    $id=$_GET["id"];
+    $sql = "select * from computer where id = '$id'";
+    $result = $connect->query($sql);
+    $row=mysqli_fetch_array($result);
+    echo "<div id='img_div' style='width: 25%;float: left;text-align: center;height: 290px;border: 1px solid gainsboro;background: white;margin-left: 20px'>";
+    echo "<img src='images/".$row['photo']."' style='width:95%;height:75%'>";
+    echo "<div style='background: rebeccapurple;height: 45px;margin-top: 235px;color: white'>";
+    echo "<p>".$row['title']."</p>";
+    echo "<p style='color: red'>".$row['price']."</p>";
+    echo "</div>";
+    echo "</div>";
+    echo "<div style='width: 70%;float: right;margin-top: 15px;background: white;margin-right: 20px' class='modal-content'>";
+        echo "<table style='width: 90%;border-spacing: 10px;margin: auto;margin-top: 10px' cellpadding='10%'>";
+            echo "<tr style='height: 30px;'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>HARDISK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                echo "<td>";
+                     echo  "<p>".$row['hardisk']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>RAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['ram']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>VGA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['vga']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                     echo "<p>CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                echo "<td>";
+                     echo  "<p>".$row['cpu']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                echo "<th style='width: 20%'>";
+                    echo "<p>MODEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>";
+                echo "</th>";
+                echo "<td>";
+                    echo  "<p>".$row['model']."</p>";
+                echo "</td>";
+            echo "</tr>";
+
+            echo "<tr style='height: 30px'>";
+                 echo "<th style='width: 20%'>";
+                    echo "<p>DESCRITION&nbsp;&nbsp;:</p>";
+                 echo "</th>";
+                 echo "<td>";
+                    echo  "<p>".$row['description']."</p>";
+                 echo "</td>";
+            echo "</tr>";
+
+
+
+        echo "</table>";
+    echo "<br>";
+    echo "<div style='width: 50%;margin-left: 40px'>";
+         echo "<a href='#'>";
+            echo "<button type='button' class='btn btn-info btn-sm' style='width: 40%' > Add to cart</button>";
+         echo "</a>";
+         echo "<a href='chart.php'>";
+            echo "<button type='button' class='btn btn-success btn-sm' style='margin-left: 10px;width: 40%'> Chat to panda shop</button>";
+         echo "</a>";
+   echo "</div>";
+
+
+    echo "<br>";
+    echo "<br>";
+
+    echo "</div>";
+
+
+}
+?>
 </div>
 
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" value="remember" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-<!--    end-->
 <div id="footer" class="col-md-12" style="height: 200px;">
     <hr>
 
@@ -292,5 +372,17 @@
         <p align="center">&copy; 2017 Panda Shop. All rights reserved | Design by <a href="http://panda_shop.com/">Panda Shop</a></p>
     </div>
 </div>
+
+<!--   </div>-->
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
