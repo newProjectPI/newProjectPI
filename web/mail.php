@@ -245,7 +245,7 @@
         	}
         });
     </script>  
-	<!-- //cart-js --> 
+	
 
 	</div>
 </body>

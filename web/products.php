@@ -756,7 +756,7 @@
 									<button type="submit" class="w3ls-cart">Add to cart</button>
 								</form>
 							</div>
-							
+
 						</div>
 						<div class="clearfix"> </div>
 					</div>
