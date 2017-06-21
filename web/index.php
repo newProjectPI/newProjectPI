@@ -50,13 +50,13 @@
             <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
         </div>
 
-        <form role="form" action="search.php" method="get" style="width: 55%;float: left;margin:0;">
+        <form role="form" action="search.php" method="get" style="width: 53%;float: left;margin:0;">
             <div class="row" style=" width: 100%">
                 <div class="col-lg-6" style="width: 90%;">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for..." name="query" >
                             <span class="input-group-btn">
-                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
+                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -3%">
 
                         </button>
                     </span>
@@ -66,7 +66,19 @@
 
             </div><!-- /.row -->
         </form>
-        <div style="width: 10%;float: right">
+        <div style="width: 17%;float: right;">
+            <?php
+            session_start();
+            if (isset($_COOKIE['username'])) {
+               // $_SESSION['username'] = $_COOKIE['username'];
+                echo $_COOKIE['username'];
+            }else if(isset($_SESSION['username'])){
+                echo $_GET['name'];
+            }
+            else{
+                echo "no account";
+            }
+            ?>
             <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
             <button class="btn btn-info btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm" style="margin-top: 15px">Logout</button>
         </div>
@@ -120,7 +132,11 @@
         <div class="modal-content"><br>
             <div class="modal-header"><h4 align="center">Logout <i class="fa fa-lock"></i></h4></div>
             <div class="modal-body"> Are you sure you want to logout?</div>
-            <div class="modal-footer"><a href="logout.php" class="btn btn-primary btn-block">Logout</a></div>
+            <div class="modal-footer">
+                <a href="logout.php" class="btn btn-primary btn-sm" style="width: 45%">Logout</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 45%">Close</button>
+            </div>
+
         </div>
     </div>
 </div>
@@ -172,14 +188,6 @@
                         </ul>
                     </li>
                     <li><a href="about.php">About Us</a></li>
-
-
-                    <!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                             <li><a href="icons.html">Web Icons</a></li>
-                            <li><a href="codes.html">Short Codes</a></li>
-                        </ul>
-                    </li>  -->
                     <li><a href="mail.php">Contact Us</a></li>
 
                 </ul>
@@ -267,10 +275,6 @@
                 <li>
                     <img src="images/tb3.jpg" alt=" " class="img-responsive" />
                 </li>
-                <!-- <li>
-                    <img src="images/tb4.jpg" alt=" " class="img-responsive" />
-                </li> -->
-
             </ul>
         </div>
         <script type="text/javascript">
