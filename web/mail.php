@@ -42,17 +42,17 @@
 <body> 
 
 	<!-- navigation -->
-	<div class="navigation">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				
-				<div class="navbar-header nav_2">
-					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+    <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2" >
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
@@ -92,25 +92,7 @@
 			</nav>
 		</div>
 	</div>
-	<!-- //navigation
-	banner -->
-	<div class="banner banner10">
-		<div class="container">
-			<h2>Contact Us</h2>
-		</div>
-	</div>
-	<!-- //banner -->    
-	<!-- breadcrumbs -->
-	<div class="breadcrumb_dress">
-		<div class="container">
-			<ul>
-				<li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Contact Us</li>
-			</ul>
-		</div>
-	</div>
-	<!-- //breadcrumbs --> 
-	<!-- mail -->
+
 	<div class="mail">
 		<div class="container">
 			<p style="color:#777777;line-height:1.3em;font-size:14px;padding-left:20px">
@@ -245,7 +227,7 @@
         	}
         });
     </script>  
-	
+
 
 	</div>
 </body>
