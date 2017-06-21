@@ -37,7 +37,7 @@
             });
         });
     </script>
-    <!-- //end-smooth-scrolling -->
+   
 </head>
 <body style="background: #f2f2f2">
 <!-- for bootstrap working -->
