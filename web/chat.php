@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header("location: loginform.php");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -69,7 +75,7 @@
         </form>
         <div style="width: 17%;float: right;">
             <?php
-            session_start();
+            //session_start();
             if (isset($_COOKIE['username'])) {
                 // $_SESSION['username'] = $_COOKIE['username'];
                 echo $_COOKIE['username'];
@@ -86,6 +92,7 @@
 
     </div>
 </div>
+
 <!--loing-->
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
@@ -140,93 +147,86 @@
         </div>
     </div>
 </div>
-	<!-- //header -->
-	<!-- navigation -->
-        <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header nav_2" >
-                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav">
-						<li><a href="index.php">Home</a></li>
-						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle act" data-toggle="dropdown" >Products <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="products.php">Asus</a></li>
-											<li><a href="products.php">Dell <span>New</span></a></li>
-											<li><a href="products.php">Lenovo</a></li>
-											<li><a href="products.php">MSI<span>New</span></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="#">Samsung</a></li>
-											<li><a href="#">Hp</a></li>
-											<li><a href="#">Apple <span>New</span></a></li>
-											<!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
-										</ul>
-									</div>
+<!-- //header -->
+<!-- navigation -->
+<div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2" >
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
-						<li><a href="about.php">About Us</a></li>
-
-						<li><a href="mail.php">Contact Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!-- //navigation -->
-	<!-- banner -->
-<!--	<div class="banner banner1">-->
-<!--		<!-- <div class="container">-->
-<!--			<h2>Great Offers on <span>Mobiles</span> Flat <i>35% Discount</i></h2>-->
-<!--		</div> -->
-<!--	</div>-->
-	<!-- breadcrumbs -->
-	<div class="breadcrumb_dress">
-		<div class="container">
-<!
-            <div class="mobiles_grid_pos">
-                <h6>New Product of DELL</h6>
             </div>
-        </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php" class="act">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Laptop</h6>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="multi-column-dropdown">
+
+                                        <h6>Laptop</h6>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
+                                        <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="mail.php">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
     </div>
-<div class="col-md-12 col-lg-12" style="margin-top: 20px">
+</div>
+<!-- top-brands -->
+<div class="col-lg-12 col-md-12">
+    <div style="margin: auto;width: 50%;margin-top: 10px" class="modal-content">
+        <form action="insertChart.php" method="post" style="width: 80%;margin: auto;margin-top: 10px">
+            <h4 align="center"><b>chart to Panda shop</b></h4><br>
+            <input type="text" name="title" class="form-control" placeholder="title"/><br>
+            <textarea class="form-control" placeholder="comment" name="comment"></textarea><br>
+            <input type="submit" class="btn btn-primary" value="submit"/>
+        </form><br>
+    </div>
+</div>
+
 <?php
 $db = mysqli_connect("localhost","root","","pcphotc");
-$sql = "SELECT * FROM computer WHERE title ='dell'";
+$sql = "SELECT * FROM chart ORDER BY id DESC ";
 $result = mysqli_query($db,$sql);
-echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+echo "<div style='background: white;border: 1px solid black;width: 100%;' >";
 while ($row = mysqli_fetch_array($result)) {
-    echo "<a href='detail.php?id=".$row['id']."'>";
-    echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
-    echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
+    echo "<div id='img_div' style='width: 30%;float: left;text-align: center;margin: auto;margin-top: 20px'>";
     echo "<p>".$row['title']."</p>";
-    echo "<p>".$row['price']."</p>";
+    echo "<p>".$row['comment']."</p>";
     echo "</div>";
-    echo "</a>";
 }
 echo "</div>";
 ?>
-</div>
 
 <div id="footer" class="col-md-12" style="height: 200px;">
     <hr>
@@ -327,6 +327,10 @@ echo "</div>";
         <p align="center">&copy; 2017 Panda Shop. All rights reserved | Design by <a href="http://panda_shop.com/">Panda Shop</a></p>
     </div>
 </div>
+
+<!--   </div>-->
+
+
 
 
 

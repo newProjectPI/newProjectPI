@@ -37,7 +37,7 @@
             });
         });
     </script>
-   
+
 </head>
 <body style="background: #f2f2f2">
 <!-- for bootstrap working -->
@@ -167,19 +167,19 @@
 
                                     <ul class="multi-column-dropdown">
                                         <h6>Laptop</h6>
-                                        <li><a href="products.php">Asus</a></li>
-                                        <li><a href="products.php">Dell <span>New</span></a></li>
-                                        <li><a href="products.php">Lenovo</a></li>
-                                        <li><a href="products.php">MSI<span>New</span></a></li>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="multi-column-dropdown">
 
                                         <h6>Laptop</h6>
-                                        <li><a href="products1.php">Samsung</a></li>
-                                        <li><a href="products1.php">Hp</a></li>
-                                        <li><a href="products1.php">Apple <span>New</span></a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
                                         <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
                                     </ul>
                                 </div>
@@ -234,13 +234,13 @@
 
     <?php
     $db = mysqli_connect("localhost","root","","pcphotc");
-    $sql = "SELECT * FROM computer";
+    $sql = "SELECT * FROM computer ORDER BY id DESC ";
     $result = mysqli_query($db,$sql);
     echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
     while ($row = mysqli_fetch_array($result)) {
         echo "<a href='detail.php?id=".$row['id']."'>";
         echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
-        echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
+        echo "<img src='images/".$row['photo']."' style='border:1px solid #b3d9ff;width:95%'>";
         echo "<p>".$row['title']."</p>";
         echo "<p>".$row['price']."</p>";
         echo "</div>";

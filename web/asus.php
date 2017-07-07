@@ -140,92 +140,94 @@
         </div>
     </div>
 </div>
-	<!-- //header -->
-	<!-- navigation -->
-        <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header nav_2" >
-                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav">
-						<li><a href="index.php">Home</a></li>
-						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle act" data-toggle="dropdown" >Products <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="products.php">Asus</a></li>
-											<li><a href="products.php">Dell <span>New</span></a></li>
-											<li><a href="products.php">Lenovo</a></li>
-											<li><a href="products.php">MSI<span>New</span></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="#">Samsung</a></li>
-											<li><a href="#">Hp</a></li>
-											<li><a href="#">Apple <span>New</span></a></li>
-											<!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
-										</ul>
-									</div>
+<!-- //header -->
+<!-- navigation -->
+<div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2" >
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle act" data-toggle="dropdown" >Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Laptop</h6>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Laptop</h6>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
+                                        <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
+                                    </ul>
+                                </div>
 
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
-						<li><a href="about.php">About Us</a></li>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="about.php">About Us</a></li>
 
-						<li><a href="mail.php">Contact Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!-- //navigation -->
-	<!-- banner -->
+                    <li><a href="mail.php">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- //navigation -->
+<!-- banner -->
 <!--	<div class="banner banner1">-->
 <!--		<!-- <div class="container">-->
 <!--			<h2>Great Offers on <span>Mobiles</span> Flat <i>35% Discount</i></h2>-->
 <!--		</div> -->
 <!--	</div>-->
-	<!-- breadcrumbs -->
-	<div class="breadcrumb_dress">
-		<div class="container">
-<!
-            <div class="mobiles_grid_pos">
-                <h6>New Product of DELL</h6>
-            </div>
+<!-- breadcrumbs -->
+<div class="breadcrumb_dress">
+    <div class="container">
+        <!
+        <div class="mobiles_grid_pos">
+            <h6>New Product of ASUS</h6>
         </div>
     </div>
+
+</div>
 <div class="col-md-12 col-lg-12" style="margin-top: 20px">
-<?php
-$db = mysqli_connect("localhost","root","","pcphotc");
-$sql = "SELECT * FROM computer WHERE title ='dell'";
-$result = mysqli_query($db,$sql);
-echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
-while ($row = mysqli_fetch_array($result)) {
-    echo "<a href='detail.php?id=".$row['id']."'>";
-    echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
-    echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%'>";
-    echo "<p>".$row['title']."</p>";
-    echo "<p>".$row['price']."</p>";
+    <?php
+    $asus = "asus";
+    $db = mysqli_connect("localhost","root","","pcphotc");
+    $sql = "SELECT * FROM computer WHERE title LIKE '%".$asus."%'";
+    $result = mysqli_query($db,$sql);
+    echo "<div style='background: white;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+    while ($row = mysqli_fetch_array($result)) {
+        echo "<a href='detail.php?id=".$row['id']."'>";
+        echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+        echo "<img src='images/".$row['photo']."' style='border:1px solid #b3d9ff;width:95%'>";
+        echo "<p>".$row['title']."</p>";
+        echo "<p>".$row['price']."</p>";
+        echo "</div>";
+        echo "</a>";
+    }
     echo "</div>";
-    echo "</a>";
-}
-echo "</div>";
-?>
+    ?>
 </div>
 
 <div id="footer" class="col-md-12" style="height: 200px;">

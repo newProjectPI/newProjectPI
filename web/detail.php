@@ -37,26 +37,26 @@
             });
         });
     </script>
-    <!-- //end-smooth-scrolling -->
+
 </head>
 <body style="background: #f2f2f2">
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 
 <div class="header navbar-fixed-top" style="background: white">
-    <div class="container" style="margin-top: -2%">
+    <div class="container" style="margin-top: -2%;">
         <div style="width: 30%;float: left;">
             <img src="images/logo.png" style="width: 60px; height: 60px;">
             <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
         </div>
 
-        <form role="form" action="search.php" method="get" style="width: 65%;float: left;margin:0;">
+        <form role="form" action="search.php" method="get" style="width: 53%;float: left;margin:0;">
             <div class="row" style=" width: 100%">
-                <div class="col-lg-6" style="width: 80%;">
+                <div class="col-lg-6" style="width: 90%;">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for..." name="query" >
                         <span class="input-group-btn">
-                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -2%">
+                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -3%">
 
                         </button>
                     </span>
@@ -66,12 +66,82 @@
 
             </div><!-- /.row -->
         </form>
-        <div style="float: right">
+        <div style="width: 17%;float: right;">
+            <?php
+            session_start();
+            if (isset($_COOKIE['username'])) {
+                // $_SESSION['username'] = $_COOKIE['username'];
+                echo $_COOKIE['username'];
+            }else if(isset($_SESSION['username'])){
+                echo $_GET['name'];
+            }
+            else{
+                echo "no account";
+            }
+            ?>
             <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm" style="margin-top: 15px">Logout</button>
         </div>
 
     </div>
 </div>
+
+<!--loing-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" value="remember" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--logout modal-->
+<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog modal-sm" style="width: 30%">
+        <div class="modal-content"><br>
+            <div class="modal-header"><h4 align="center">Logout <i class="fa fa-lock"></i></h4></div>
+            <div class="modal-body"> Are you sure you want to logout?</div>
+            <div class="modal-footer">
+                <a href="logout.php" class="btn btn-primary btn-sm" style="width: 45%">Logout</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 45%">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //header -->
+<!-- navigation -->
 <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -97,19 +167,19 @@
 
                                     <ul class="multi-column-dropdown">
                                         <h6>Laptop</h6>
-                                        <li><a href="products.php">Asus</a></li>
-                                        <li><a href="products.php">Dell <span>New</span></a></li>
-                                        <li><a href="products.php">Lenovo</a></li>
-                                        <li><a href="products.php">MSI<span>New</span></a></li>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="multi-column-dropdown">
 
                                         <h6>Laptop</h6>
-                                        <li><a href="products1.php">Samsung</a></li>
-                                        <li><a href="products1.php">Hp</a></li>
-                                        <li><a href="products1.php">Apple <span>New</span></a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
                                         <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
                                     </ul>
                                 </div>
@@ -118,14 +188,6 @@
                         </ul>
                     </li>
                     <li><a href="about.php">About Us</a></li>
-
-
-                    <!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                             <li><a href="icons.html">Web Icons</a></li>
-                            <li><a href="codes.html">Short Codes</a></li>
-                        </ul>
-                    </li>  -->
                     <li><a href="mail.php">Contact Us</a></li>
 
                 </ul>
@@ -133,7 +195,7 @@
         </nav>
     </div>
 </div>
-<div style="width: 100%;height: 800px">
+<div style="width: 100%;">
 
 
 <?php
@@ -214,7 +276,7 @@ if(isset($_GET["id"]) && !empty($_GET["id"])){
          echo "<a href='#'>";
             echo "<button type='button' class='btn btn-info btn-sm' style='width: 40%' > Add to cart</button>";
          echo "</a>";
-         echo "<a href='chart.php'>";
+         echo "<a href='chat.php?'>";
             echo "<button type='button' class='btn btn-success btn-sm' style='margin-left: 10px;width: 40%'> Chat to panda shop</button>";
          echo "</a>";
    echo "</div>";
@@ -229,42 +291,33 @@ if(isset($_GET["id"]) && !empty($_GET["id"])){
 }
 ?>
 </div>
+<?php
+$db = mysqli_connect("localhost","root","","pcphotc");
+$sql = "SELECT * FROM computer ORDER BY id DESC limit 0,4 ";
+$result = mysqli_query($db,$sql);
+echo "<div style='background: white;margin: auto;' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+while ($row = mysqli_fetch_array($result)) {
+    echo "<a href='detail.php?id=".$row['id']."'>";
+    echo "<div id='img_div' style='width: 25%;float: left;text-align: center;height: 240px'>";
+    echo "<img src='images/".$row['photo']."' style='border:1px solid red;width:95%;height:170px'>";
+    echo "<p>".$row['title']."</p>";
+    echo "<p>".$row['price']."</p>";
+    echo "</div>";
+    echo "</a>";
+}
+echo "</div>";
+?>
+<!--MODAL LOGOUT-->
+<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog modal-sm" style="width: 30%">
+        <div class="modal-content"><br>
+            <div class="modal-header"><h4 align="center">Logout <i class="fa fa-lock"></i></h4></div>
+            <div class="modal-body"> Are you sure you want to logout?</div>
+            <div class="modal-footer">
+                <a href="logout.php" class="btn btn-primary btn-sm" style="width: 45%">Logout</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 45%">Close</button>
+            </div>
 
-<div class="modal fade" id="myModal" role="dialog">
-    <div id="login-overlay" class="modal-dialog">
-        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="well">
-                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
-                                <div class="form-group">
-                                    <label for="username" class="control-label">Username</label>
-                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="control-label">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div class="form-group">
-                                    <div>
-                                        <input type="checkbox" value="remember" name="check">Remember me
-                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-block">Login</button>
-                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>

@@ -168,21 +168,21 @@
 
 <!--    signUp-->
 <div class="col-md-12" style="margin-top: 10px">
-    <div style="width: 70%;margin: auto;" class="modal-content">
+    <form id="loginForm" method="POST" action="saveAccount.php" novalidate="novalidate" style="width: 70%;margin: auto;" class="modal-content">
         <br>
         <h2  align="center">Create new account</h2>
         <div style="width:60%;margin: auto;"><br>
-            <input type="text" class="form-control" placeholder="User Name"><br>
-            <input type="text" class="form-control" placeholder="E-mail"><br>
-            <input type="text" class="form-control" placeholder="Password"><br>
+            <input type="text" class="form-control" name="username" placeholder="User Name"><br>
+            <input type="text" class="form-control" name="email" placeholder="E-mail"><br>
+            <input type="password" class="form-control" name="password" placeholder="Password"><br>
             <select class="form-control" name="gender">
                 <option value="F">Female</option>
                 <option value="M">Male</option>
             </select> <br>
             <input type="submit" value="Sign up" class="btn btn-primary">
-            <input type="submit" value="cancel" class="btn btn-info">
+            <input type="button" value="cancel" class="btn btn-info">
         </div><br>
-    </div>
+    </form>
 
 </div>
 

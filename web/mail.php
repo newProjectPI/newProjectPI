@@ -1,99 +1,207 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-<title>Panda Shop</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+    <title>Panda Shop</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 	SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-	function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!-- Custom Theme files -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
-<!-- //Custom Theme files -->
-<!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- js -->
-<script src="js/jquery.min.js"></script> 
-<!-- //js -->  
-<!-- web fonts --> 
-<link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- //web fonts --> 
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style_s.css">
+    <!-- //Custom Theme files -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown -->
+    <!-- //js -->
+    <!-- web fonts -->
+    <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- //web fonts -->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+
+</head>
+<body style="background: #f2f2f2">
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
-<!-- start-smooth-scrolling -->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- //end-smooth-scrolling --> 
-</head> 
-<body> 
 
-	<!-- navigation -->
-    <div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header nav_2" >
-                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-				</div> 
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav">
-						<li><a href="index.php">Home</a></li>
-						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="products.php">Asus</a></li>
-											<li><a href="products.php">Dell <span>New</span></a></li>
-											<li><a href="products.php">Lenovo</a></li>
-											<li><a href="products.php">MSI<span>New</span></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-6">
-										<ul class="multi-column-dropdown">
-											<h6>Laptop</h6>
-											<li><a href="products1.php">Samsung</a></li>
-											<li><a href="products1.php">Hp</a></li>
-											<li><a href="products1.php">Apple <span>New</span></a></li>
-										</ul>
-									</div>
+<div class="header navbar-fixed-top" style="background: white">
+    <div class="container" style="margin-top: -2%;">
+        <div style="width: 30%;float: left;">
+            <img src="images/logo.png" style="width: 60px; height: 60px;">
+            <p style="margin-top: 14px"><h2><b>Panda PC Shop</b></h2></p>
+        </div>
 
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
-						<li><a href="about.php">About Us</a></li>
+        <form role="form" action="search.php" method="get" style="width: 53%;float: left;margin:0;">
+            <div class="row" style=" width: 100%">
+                <div class="col-lg-6" style="width: 90%;">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for..." name="query" >
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary glyphicon glyphicon-search" name="submit" type="submit" style="margin-top: -3%">
 
-						<li><a href="mail.php" class="act">Contact Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
+                        </button>
+                    </span>
+                    </div><!-- /input-group -->
 
-	<div class="mail">
+                </div><!-- /.col-lg-6 -->
+
+            </div><!-- /.row -->
+        </form>
+        <div style="width: 17%;float: right;">
+            <?php
+            session_start();
+            if (isset($_COOKIE['username'])) {
+                // $_SESSION['username'] = $_COOKIE['username'];
+                echo $_COOKIE['username'];
+            }else if(isset($_SESSION['username'])){
+                echo $_GET['name'];
+            }
+            else{
+                echo "no account";
+            }
+            ?>
+            <button class="btn btn-info fa fa-user" data-toggle="modal" data-target="#myModal" style="margin-top: 15px"></button>
+            <button class="btn btn-info btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm" style="margin-top: 15px">Logout</button>
+        </div>
+
+    </div>
+</div>
+
+<!--loing-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content col-lg-6 col-lg-offset-3" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login to Panda PC Shop </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="login.php?op=in" novalidate="novalidate" style="width: 100%">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="user" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="checkbox" value="remember" name="check">Remember me
+                                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <a href="signUp.php" class="btn btn-default btn-block">Sign Up</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--logout modal-->
+<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" >
+    <div class="modal-dialog modal-sm" style="width: 30%">
+        <div class="modal-content"><br>
+            <div class="modal-header"><h4 align="center">Logout <i class="fa fa-lock"></i></h4></div>
+            <div class="modal-body"> Are you sure you want to logout?</div>
+            <div class="modal-footer">
+                <a href="logout.php" class="btn btn-primary btn-sm" style="width: 45%">Logout</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 45%">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //header -->
+<!-- navigation -->
+<div class="navigation" style="background: #737373;margin-top: 76px;margin-left: 0">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2" >
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php" class="act">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Laptop</h6>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="multi-column-dropdown">
+
+                                        <h6>Laptop</h6>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
+                                        <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="mail.php">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+
+
+<div class="mail">
 		<div class="container">
 			<p style="color:#777777;line-height:1.3em;font-size:14px;padding-left:20px">
 			 <strong style="color: red"> Contact Us </strong>  <br>_________________________________________________________________ <br><br>

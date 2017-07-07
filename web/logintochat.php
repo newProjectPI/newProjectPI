@@ -15,20 +15,20 @@ if ($op == $_GET['op']){
             setcookie('username', $usern, time()+60*60*24);
             echo "<script language=\"JavaScript\">
                 alert(\"successful\");
-                document.location=\"index.php\";
+                document.location=\"chat.php\";
               </script>";
         }
         else{
             echo "<script language=\"JavaScript\">
                 alert(\"successful\");
-                document.location=\"index.php?name=$usern\";
+                document.location=\"chat.php\";
               </script>";
         }
 
     }else{
         echo "<script language=\"JavaScript\">
                 alert(\"sorry username or password is incorrect!\");
-                document.location=\"index.php\";
+                document.location=\"loginform.php\";
               </script>";
     }
 }

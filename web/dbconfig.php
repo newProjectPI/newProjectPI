@@ -6,4 +6,4 @@
  * Time: 3:31 PM
  */
 $connect = mysqli_connect('localhost','root','');
-mysqli_select_db($connect,'pcphoto');
+mysqli_select_db($connect,'pcphotc');

@@ -81,19 +81,19 @@
 
                                     <ul class="multi-column-dropdown">
                                         <h6>Laptop</h6>
-                                        <li><a href="products.php">Asus</a></li>
-                                        <li><a href="products.php">Dell <span>New</span></a></li>
-                                        <li><a href="products.php">Lenovo</a></li>
-                                        <li><a href="products.php">MSI<span>New</span></a></li>
+                                        <li><a href="asus.php">Asus</a></li>
+                                        <li><a href="dell.php">Dell <span>New</span></a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI<span>New</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="multi-column-dropdown">
 
                                         <h6>Laptop</h6>
-                                        <li><a href="products1.php">Samsung</a></li>
-                                        <li><a href="products1.php">Hp</a></li>
-                                        <li><a href="products1.php">Apple <span>New</span></a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Hp</a></li>
+                                        <li><a href="#">Apple <span>New</span></a></li>
                                         <!-- <li><a href="products1.html"><i>Summer Store</i></a></li> -->
                                     </ul>
                                 </div>
@@ -102,14 +102,6 @@
                         </ul>
                     </li>
                     <li><a href="about.php">About Us</a></li>
-
-
-                    <!-- <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                             <li><a href="icons.html">Web Icons</a></li>
-                            <li><a href="codes.html">Short Codes</a></li>
-                        </ul>
-                    </li>  -->
                     <li><a href="mail.php">Contact Us</a></li>
 
                 </ul>
@@ -125,11 +117,11 @@
                 <a href="#" class="list-group-item" style="background: #33cccc;color: white;text-align: center">MENU</a>
 
                 <a href="#" id="member" class="list-group-item">Member</a>
-                <a href="#" class="list-group-item">Chat</a>
+                <a href="#" id="chartItem" class="list-group-item">Chat</a>
                 <a href="#" class="list-group-item">Update Product</a>
                 <a href="#" class="list-group-item">Delete Product</a>
                 <a href="#" id="insert" class="list-group-item">Insert Product</a>
-                <a href="#" class="list-group-item">List Product</a>
+                <a href="#" id="listItem" class="list-group-item">List Product</a>
             </div>
         </div>
         <div id="user" style="width: 78%;float: right;" class="modal-content" >
@@ -145,6 +137,38 @@
                 echo "</div>";
                 echo "</a>";
 
+            }
+            echo "</div>";
+            ?>
+            <!--chart-->
+            <?php
+            $db = mysqli_connect("localhost","root","","pcphotc");
+            $sql = "SELECT * FROM chart ORDER BY id DESC ";
+            $result = mysqli_query($db,$sql);
+            echo "<div id='chart' style='background: white;width: 100%;display: none' >";
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<div id='img_div' style='width: 30%;float: left;text-align: center;margin: auto;margin-top: 20px'>";
+                echo "<p>".$row['title']."</p>";
+                echo "<p>".$row['comment']."</p>";
+                echo "</div>";
+            }
+            echo "</div>";
+            ?>
+
+            <!--list product-->
+            <?php
+            $db = mysqli_connect("localhost","root","","pcphotc");
+            $sql = "SELECT * FROM computer ORDER BY id DESC ";
+            $result = mysqli_query($db,$sql);
+            echo "<div id='list' style='background: white;display: none' class='col-md-12 col-sm-12 col-lg-12 col-xs-12' >";
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<a href='detail.php?id=".$row['id']."'>";
+                echo "<div id='img_div' style='width: 25%;float: left;text-align: center'>";
+                echo "<img src='images/".$row['photo']."' style='border:1px solid #b3d9ff;width:95%'>";
+                echo "<p>".$row['title']."</p>";
+                echo "<p>".$row['price']."</p>";
+                echo "</div>";
+                echo "</a>";
             }
             echo "</div>";
             ?>
@@ -195,7 +219,8 @@
                 $("#insert").click(function(){
                     $("#content").show();
                     $("#user").hide();
-
+                    $("#chart").hide();
+                    $('#list').hide();
                 });
             });
         </script>
@@ -205,6 +230,30 @@
                 $("#member").click(function(){
                     $("#user").show();
                     $("#content").hide();
+                    $("#chart").hide();
+                    $('#list').hide();
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function(){
+                $("#chartItem").click(function(){
+                    $("#user").hide();
+                    $("#content").hide();
+                    $("#chart").show();
+                    $('#list').hide();
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function(){
+                $("#listItem").click(function(){
+                    $("#user").hide();
+                    $("#content").hide();
+                    $("#chart").hide();
+                    $('#list').show();
                 });
             });
         </script>
